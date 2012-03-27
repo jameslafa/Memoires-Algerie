@@ -575,13 +575,13 @@ input.action.secondary {
 /* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
 
 /* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
-#user_edit form#edit_user {
+#user_edit form#edit_user(method="POST") {
   margin: 50px auto 10px auto;
   width: 500px;
 }
 
 /* line 5 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
-#user_edit form#edit_user label {
+#user_edit form#edit_user(method="POST") label {
   display: inline-block;
   font-weight: bold;
   line-height: 40px;
@@ -591,16 +591,16 @@ input.action.secondary {
 }
 
 /* line 12 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
-#user_edit form#edit_user input {
+#user_edit form#edit_user(method="POST") input {
   width: 150px;
 }
 
 /* line 14 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
-#user_edit form#edit_user input#admin {
+#user_edit form#edit_user(method="POST") input#admin {
   margin: 0;
 }
 
 /* line 16 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
-#user_edit form#edit_user #submit {
+#user_edit form#edit_user(method="POST") #submit {
   margin-left: 162px;
 }

@@ -16,33 +16,41 @@ header
 				div.jp-gui.jp-interface
 					ul.jp-controls
 						li
-							a.jp-play(href="javascript:;",tabindex="1") play
+							a.jp-previous(href="javascript:;",tabindex="1", title="previous") previous
 						li
-							a.jp-pause(href="javascript:;",tabindex="1",style="display:none;") pause
+							a.jp-play(href="javascript:;",tabindex="1", title="play") play
+						li
+							a.jp-pause(href="javascript:;",tabindex="1",style="display:none;",title="pause") pause
+						li
+							a.jp-next(href="javascript:;",tabindex="1") next
+						li
+							a.jp-mute(href="javascript:;",tabindex="1", title="mute") mute
+						li
+							a.jp-unmute(href="javascript:;",tabindex="1",title="unmute") unmute
 
+					div.clear
 					
-					ul.jp-toggles
-						li
-							a.jp-shuffle(href="javascript:;", tabindex="1", title="shuffle")
-							
+					div.jp-volume-bar
+						div.jp-volume-bar-value
+
 				div.jp-playlist(style="display:none")
 					ul
 						li
 		
-		a.bt_comprendre.lightbox(href="#comprendre", title="Comprendre L'application") Comprendre L'application
+		a.bt_comprendre.inline(href="#comprendre", title="Comprendre L'application") Comprendre L'application
 		div.clear
 		nav
 			ul
 				li
-					a.bt_map(href="map", data-name="page-map") Map
+					a.bt_map(href="#", data-name="page-map", rel="map") Map
 				li
-					a.bt_timeline(href="timeline", data-name="page-timeline") Timeline
+					a.bt_timeline(href="#", data-name="page-timeline", rel="timeline") Timeline
 			div.clear
 		div.temoignez
 			span 
 				| Vous avez des documents
 				br 
 				| à nous faire parvenir ?
-			a.bt_temoignez.lightbox(href="#temoignez", title="Témoignez") Témoignez
+			a.bt_temoignez.inline(href="#temoignez", title="Témoignez") Témoignez
 		div.clear
 	div.clear

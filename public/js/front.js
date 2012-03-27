@@ -8,6 +8,7 @@ jQuery(document).ready(function($){
 	var uri 					= new URI(document.URL);
 	var pat			 			= uri.pathname().split('?');
 	var pathname 			= pat[0].split('/');
+	
 	window.pathname 	= pat[0];
 
 	window.page 			= pathname[1];
@@ -58,11 +59,12 @@ jQuery(document).ready(function($){
   });
     
 	$('header nav a').live(evently, function(event){
-		event.preventDefault();
-		var href 		= $(this).attr('href');	
+		
+		var rel 		= $(this).attr('rel');	
 		var text 		= $(this).text();
-		window.page = href;
-		History.pushState({page:window.page,period:window.period_key }, titleSite+' | '+text, '/'+window.page+'/'+window.period_key+'/');
+		window.page = rel;
+		History.pushState({page:window.page,period:window.period_key }, null, '/'+window.page+'/'+window.period_key+'/');
+		event.preventDefault();
 	});
 
 	$('.tooltip').live(evently, function(event){	
@@ -71,23 +73,23 @@ jQuery(document).ready(function($){
 		}
 		tooltip(window.page,this);
 		var urlState = '/'+window.page+'/'+window.period_key+'/';
-		History.pushState({page:window.page,period:window.period_key }, titleSite+' | '+window.page, urlState);
+		History.pushState({page:window.page,period:window.period_key }, null, urlState);
 		event.preventDefault();
 	});
 	
 	$(".btinfo").live(evently, function(event) {
 		var town 			= $(this).attr('rel');
 		var link 			= '/api/document/period/'+window.period_key+'/search/town/'+town+'/';
-		var urlState 	= '/timeline/'+window.period_key+'/town/'+town;
-		History.pushState({page:'timelineTown',period:window.period_key, link:link }, titleSite+' | '+window.page, urlState);
+		var urlState 	= '/timeline/'+window.period_key+'/town/'+town+'/';
+		History.pushState({page:'timelineTown',period:window.period_key, link:link }, null, urlState);
 		event.preventDefault();
 	});
 	
 	$(".bt_consult").live(evently, function(event) {
 		var id 			= $(this).attr('rel');
 		var link 			= '/api/document/'+id+'/';
-		var urlState 	= '/document/'+id;
-		History.pushState({page:'document',period:window.period_key, link:link  }, titleSite+' | '+window.page, urlState);
+		var urlState 	= '/document/'+id+'/';
+		History.pushState({page:'document',period:window.period_key, link:link  }, null, urlState);
 		event.preventDefault();
 	});
 	$(".bt_retour").live(evently, function(event) {
@@ -106,8 +108,8 @@ jQuery(document).ready(function($){
 	$(".bt_tag").live(evently, function(event) {
 		var tag 			= $(this).text();
 		var link 			= '/api/document/period/'+window.period_key+'/search/tag/'+tag+'/';
-		var urlState 	= '/timeline/'+window.period_key+'/tag/'+tag;
-		History.pushState({page:'timelineTag',period:window.period_key, link:link }, titleSite+' | '+window.page, urlState);
+		var urlState 	= '/timeline/'+window.period_key+'/tag/'+tag+'/';
+		History.pushState({page:'timelineTag',period:window.period_key, link:link }, null, urlState);
 		event.preventDefault();
 	});
 	
@@ -302,12 +304,24 @@ jQuery(document).ready(function($){
 			supplied: "mp3",
 			wmode: "window",
 			loop: true,
-			volume : 0.1,
+			volume : 0.8,
+			volumechange: commonVolume,
 			ready: function() {
     		$(this).jPlayer("play");
     	}
 		}
 	);
+	$(".inline").colorbox({
+		title: false,
+		inline:true, 
+		width:"50%",
+		arrowKey: false,
+		slideshow: false,
+		opacity:0.6
+		
+	});
+	
+	
 	
 });// fin dom event
 
@@ -338,7 +352,7 @@ function init(linkInit, period, page){
 		jQuery('.title_period').text(text);
 		var oldColor = jQuery('.choixEvenement #enc').attr('class');
 		jQuery('.choixEvenement #enc, .choixEvenement #enc2').removeClass(oldColor).addClass(newcolor);
-		jQuery('.question.lightbox').attr('href', '#'+period);
+		jQuery('.question.inline').attr('href', '#'+period);
 	
 		// color de la bande evntCol
 		var colorEvnt 			= jQuery('#evntCol').attr('class');
@@ -346,7 +360,7 @@ function init(linkInit, period, page){
 		
 		get_result_json_search(linkInit);
 		
-		History.pushState({page:window.page,period:window.period_key }, window.titleSite+' | '+text, window.pathname);
+		History.pushState({page:window.page,period:window.period_key }, null, window.pathname);
 	}
 	start = false;
 }
@@ -556,11 +570,11 @@ function displayTimelineDetail(link){
 					var credits = '';
 				}
 				
-				mediasList += '<div class="item type_'+jd.medias[m].type+'"><a class="lightDoc" href="'+jd.medias[m].file+'" title="'+jd.medias[m].description+'"><img src="'+jd.medias[m].file+'" alt="'+jd.medias[m].title+'" /></a><span class="name">'+jd.medias[m].title+credits+'</span><div class="clear"></div></div>';
+				mediasList += '<div class="item type_'+jd.medias[m].type+'"><a class="groupDoc" rel="groupDocs" href="'+jd.medias[m].file+'" title="'+jd.medias[m].description+'"><img src="'+jd.medias[m].file+'" alt="'+jd.medias[m].title+'" /></a><span class="name">'+jd.medias[m].title+credits+'</span><div class="clear"></div></div>';
 			}else if(jd.medias[m].type == 'audio'){
 				
 				mediasList += '<div class="item type_'+jd.medias[m].type+'" >';
-				mediasList += '<script>jQuery("#jquery_jplayer_'+jd.medias[m]._id+'").jPlayer({ready: function () {jQuery(this).jPlayer("setMedia", {mp3:"'+jd.medias[m].file+'" });},play: function() {jQuery(this).jPlayer("pauseOthers");},cssSelectorAncestor: "#jp_container_'+jd.medias[m]._id+'",swfPath: "/js/jPlayer",supplied: "mp3",wmode: "window"});</script>';
+				mediasList += '<script type="text/javascript">jQuery("#jquery_jplayer_'+jd.medias[m]._id+'").jPlayer({ready: function () {jQuery(this).jPlayer("setMedia", {mp3:"'+jd.medias[m].file+'" });},play: function() {jQuery(this).jPlayer("pauseOthers");},cssSelectorAncestor: "#jp_container_'+jd.medias[m]._id+'",swfPath: "/js/jPlayer",supplied: "mp3",wmode: "window",volumechange: commonVolume});</script>';
 				
 				mediasList += '<div id="jquery_jplayer_'+jd.medias[m]._id+'" class="jp-jplayer"></div><div id="jp_container_'+jd.medias[m]._id+'" class="jp-audio"><div class="jp-type-single"><div class="jp-gui jp-interface"><ul class="jp-controls"><li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li><li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li></ul></div></div></div>';
 				
@@ -569,7 +583,7 @@ function displayTimelineDetail(link){
 			}
 			
 		}
-		mediasList += '<div class="clear"></div>';
+		mediasList += '<script type="text/javascript">$(".groupDoc").colorbox({ rel:"groupDocs",transition:"elastic",height: "96%"});</script><div class="clear"></div>';
 
 		jQuery("#comments").empty();
 		var fbcomments = '<div data-num-posts="5" data-width="720" class="fb-comments" data-href="' + window.location.href + '"></div>';
@@ -619,7 +633,7 @@ function tooltip(page, bt){
 	}
 	jQuery('.title_period').text(title);
 	jQuery('.choixEvenement #enc, .choixEvenement #enc2').removeClass(classEncBefore).addClass(classEncAfter);
-	jQuery('.question.lightbox').attr('href', '#'+window.period_key);
+	jQuery('.question.inline').attr('href', '#'+window.period_key);
 	
 	sourceXML = '/gmap/'+window.period_key+'.xml';
 	initialize(sourceXML); 
@@ -757,3 +771,17 @@ function getNameFromCode(item, code){
 		}
 	}
 }
+
+var volumeBeingChanged = false;
+function commonVolume(event) {
+
+    if(!volumeBeingChanged) {
+        volumeBeingChanged = true;
+        jQuery(".jp-jplayer")
+        .jPlayer("option", "volume", event.jPlayer.options.volume)
+        .jPlayer("option", "muted", event.jPlayer.options.muted);
+        // The other events have occurred, so set the flag back again
+        volumeBeingChanged = false;
+    }
+}
+    

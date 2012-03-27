@@ -5,8 +5,6 @@ head
 	- if (typeof admin != "undefined")
 		link(rel='stylesheet', href='/css/admin.css')
 	- else
-		link(rel='stylesheet', href='/css/main.css')
-		link(rel='stylesheet', href='/js/jPlayer/player.css')
 		meta(property="og:title", content="#{fb.title}")
 		meta(property="og:type", content="non_profit")
 		meta(property="og:url", content="#{fb.url}")
@@ -14,3 +12,8 @@ head
 		meta(property="og:site_name", content="M&eacute;moires d'Alg&eacute;rie")
 		meta(property="og:description", content="#{fb.description}")
 		meta(property="fb:app_id", content="394032280626738")
+		script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+		script(src='http://explorercanvas.googlecode.com/svn/trunk/excanvas.js')
+		link(rel='stylesheet', href='/css/main.css')
+		link(rel='stylesheet', href='/js/jPlayer/player.css')
+		link(rel='stylesheet', href='/js/colorbox/colorbox.css')
