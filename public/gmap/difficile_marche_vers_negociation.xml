@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markers>
+	<marker id="m'kira" name="M'kira" lat="36.8194444" lng="4.275" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="taka" name="Taka" lat="36.6309694" lng="3.7732244" nbdoc="2" militaire="2" personnelle="0" administrative="0" />
+	<marker id="tizi-reniff" name="Tizi-Reniff" lat="36.587296" lng="3.767909" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="alger" name="Alger" lat="36.7575864" lng="3.058872" nbdoc="46" militaire="6" personnelle="2" administrative="38" />
+	<marker id="aïn skhouna" name="Aïn Skhouna" lat="36.7340563" lng="3.754465" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="babar" name="Babar" lat="35.1691777" lng="7.1012878" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tazougert" name="Tazougert" lat="21.2922222" lng="6.5272222" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="kenchela" name="Kenchela" lat="35.43811" lng="7.146648" nbdoc="3" militaire="3" personnelle="0" administrative="0" />
+	<marker id="paris" name="Paris" lat="48.856614" lng="2.3522219" nbdoc="26" militaire="0" personnelle="2" administrative="24" />
+	<marker id="charleville-mézières" name="Charleville-Mézières" lat="49.762085" lng="4.726096" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="chlef" name="Chlef" lat="36.1666667" lng="1.3333333" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="batna" name="Batna" lat="35.55" lng="6.1666667" nbdoc="13" militaire="0" personnelle="0" administrative="13" />
+	<marker id="ouargla" name="Ouargla" lat="31.96298" lng="5.342011" nbdoc="8" militaire="0" personnelle="0" administrative="8" />
+	<marker id="touggourt" name="Touggourt" lat="33.1" lng="6.0666667" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="arris" name="Arris" lat="35.25" lng="6.35" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="nementchas" name="Nementchas" lat="34.8666667" lng="7.0833333" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="constantine" name="Constantine" lat="36.35" lng="6.6" nbdoc="13" militaire="0" personnelle="1" administrative="12" />
+	<marker id="djedida" name="Djedida" lat="34.9" lng="7.233333" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tamza" name="Tamza" lat="35.316667" lng="6.833333" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tebessa" name="Tebessa" lat="35.407139" lng="8.1208639" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tizi ouzou " name="Tizi Ouzou " lat="36.7166667" lng="4.05" nbdoc="3" militaire="0" personnelle="0" administrative="3" />
+	<marker id="oran" name="Oran" lat="35.6969444" lng="-0.6330556" nbdoc="20" militaire="2" personnelle="3" administrative="15" />
+	<marker id="tizi ouzou" name="Tizi Ouzou" lat="36.7166667" lng="4.05" nbdoc="7" militaire="2" personnelle="2" administrative="3" />
+	<marker id="ouargl" name="Ouargl" lat="31.96298" lng="5.342011" nbdoc="2" militaire="0" personnelle="0" administrative="2" />
+	<marker id="mansourah" name="Mansourah" lat="36.076832" lng="4.461069" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="sidi aich" name="Sidi Aich" lat="36.61348" lng="4.687842" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="bourkika" name="Bourkika" lat="36.7853732" lng="3.0577974" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="sétif" name="Sétif" lat="36.18898" lng="5.414416" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="colomb bechar" name="Colomb Bechar" lat="31.608219" lng="-2.220005" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="alger " name="Alger " lat="36.752887" lng="3.042048" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="bordj-ménaïel" name="Bordj-Ménaïel" lat="36.7416667" lng="3.7230556" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tizi-ouzou" name="Tizi-Ouzou" lat="36.7166667" lng="4.05" nbdoc="5" militaire="5" personnelle="0" administrative="0" />
+	<marker id="aïn el hammam" name="Aïn el Hammam" lat="36.570507" lng="4.309434" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="cap aokas" name="Cap Aokas" lat="36.6437425" lng="5.2384132" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="bordj" name="bordj" lat="34.633333" lng="2.616667" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="bordj-ménaiel" name="Bordj-Ménaiel" lat="36.7416667" lng="3.7230556" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="palestro" name="Palestro" lat="36.5622222" lng="3.5944444" nbdoc="2" militaire="2" personnelle="0" administrative="0" />
+	<marker id="gaïcha" name="Gaïcha" lat="34.8833333" lng="6.85" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="paris " name="Paris " lat="48.856614" lng="2.3522219" nbdoc="4" militaire="0" personnelle="0" administrative="4" />
+	<marker id="ihadaddene" name="Ihadaddene" lat="36.737114" lng="5.0549896" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="bordj-menaïel" name="bordj-menaïel" lat="36.7416667" lng="3.7230556" nbdoc="4" militaire="4" personnelle="0" administrative="0" />
+	<marker id="inoughissen" name="Inoughissen" lat="35.2880108" lng="6.5383124" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="el kala" name="El Kala" lat="36.9" lng="8.45" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="bouira" name="Bouira" lat="36.2835299" lng="3.9878427" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="draâ el mizan" name="Draâ el Mizan" lat="36.5355556" lng="3.8341667" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="mascara" name="Mascara" lat="35.400169" lng="0.139852" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="ksar el boukhari" name="Ksar el Boukhari" lat="35.8855556" lng="2.7508333" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="blida" name="Blida" lat="36.480499" lng="2.833905" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="dar el chioukh" name="Dar El Chioukh" lat="34.906799" lng="3.480824" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="kouba" name="kouba" lat="36.7318176" lng="3.0847361" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tissemsilt" name="Tissemsilt" lat="1.9099238" lng="35.6382064" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="el bayadh" name="El Bayadh" lat="33.65063" lng="1.0840175" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="halouane" name="Halouane" lat="36.470985" lng="3.931157" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="ouadhias" name="Ouadhias" lat="36.55" lng="4.083333" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="bou allah" name="Bou Allah" lat="35.2730556" lng="0.7694444" nbdoc="2" militaire="2" personnelle="0" administrative="0" />
+	<marker id="dra el mizan" name="Dra El Mizan" lat="36.5632938" lng="3.8394491" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="azazga" name="Azazga" lat="36.74704" lng="4.370063" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="akfadou" name="Akfadou" lat="36.6740411" lng="4.5418141" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tazmalt" name="Tazmalt" lat="36.384499" lng="4.40209" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="el kseur" name="El Kseur" lat="36.683479" lng="4.851914" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="bougie" name="Bougie" lat="36.75" lng="5.0666667" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="akbou" name="Akbou" lat="36.463039" lng="4.535953" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="mira" name="Mira" lat="36.8194444" lng="4.275" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="djereah" name="Djereah" lat="36.426537" lng="4.370463" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tadmaït" name="Tadmaït" lat="36.73914" lng="3.901676" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="zimoula" name="Zimoula" lat="36.7166667" lng="4.05" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="bab el oued" name="Bab el Oued" lat="36.7873788" lng="3.0513601" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="zioui" name="Zioui" lat="35.2957594" lng="7.3543566" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="taourirt" name="Taourirt" lat="36.329216" lng="4.313432" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tifra" name="Tifra" lat="36.6666667" lng="4.7" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="fort-national" name="Fort-National" lat="36.7928668" lng="3.0206988" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="azaga" name="Azaga" lat="36.74704" lng="4.370063" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="mahagga" name="Mahagga" lat="36.683333" lng="4.533333" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="mouzaiaville" name="Mouzaiaville" lat="36.3833333" lng="2.7333333" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="cherchell" name="Cherchell" lat="36.60709" lng="2.196783" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="djelfa" name="Djelfa" lat="34.6666667" lng="3.25" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="tazoult, lambèse" name="Tazoult, Lambèse" lat="35.49139" lng="6.255705" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="m’doukal" name="M’doukal" lat="35.129509" lng="5.175442" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+</markers>

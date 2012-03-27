@@ -1,0 +1,16 @@
+.media(mediaid=index)
+	.formline
+		label Titre:
+		input.long_input(name='medias[#{index}][title]')
+	.formline
+		label.top Description:
+		textarea(name='medias[#{index}][description]', cols="83", rows="5")
+	.formline
+		label Crédits:
+		input(name='medias[#{index}][credits]')
+	.formline
+		label Fichier:
+		input(type='file', name='medias[#{index}][file]')
+		input(type='hidden', name='medias[#{index}][id]', value="")
+	.formline
+		a.action.secondary.remove_media(href='#', mediaid=index) Supprimer ce média

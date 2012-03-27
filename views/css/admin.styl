@@ -1,0 +1,75 @@
+@import "mixins.styl"
+
+backgroundcolor = #f3f0e8
+
+body
+	background-color backgroundcolor
+	font-family helvetica
+	margin 0
+	padding 0
+
+.admin_page
+	.clearfix
+		clearfix()
+	.notice
+		background-color darken(backgroundcolor, 10%)
+		padding 0.6em
+		text-align center
+
+	#header
+		background-color darken(backgroundcolor, 60%)
+		h1
+			color backgroundcolor
+			display inline
+			font-size 20px
+			float right
+			padding-right 30px
+			text-shadow 1px 1px 3px #333
+			text-transform uppercase
+		nav			
+			display inline-block
+			float left
+
+a.action, span.action, input.action
+	background-color darken(backgroundcolor, 10%)
+	border 1px solid #ddd
+	border-radius 5px
+	box-shadow 0 0 2px #555
+	color #333
+	cursor pointer
+	display inline-block
+	font-size 13px
+	font-weight bold
+	margin 10px 20px
+	padding 5px 10px
+	text-decoration none
+	text-transform uppercase
+	&:hover
+		background-color darken(backgroundcolor, 5%)
+		box-shadow 0 0 4px #222
+	&.secondary
+		background-color transparent
+
+#messages
+	margin 30px auto
+	width 700px
+	ul
+		list-style-type none
+		margin 0
+		padding 10px
+		&.error
+			background rgba(255, 0, 0, 0.1)
+			border 1px solid #bbb
+			border-radius 5px
+			box-shadow 0 0 5px #888
+		li
+			font-size 13px
+			padding 5px 0
+
+@import "admin/login.styl"
+@import "admin/document/main.styl"
+@import "admin/document/list.styl"
+@import "admin/document/edit.styl"
+@import "admin/tag/list.styl"
+@import "admin/user/list.styl"
+@import "admin/user/edit.styl"

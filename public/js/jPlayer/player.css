@@ -1,0 +1,62 @@
+div.jp-audio,
+div.jp-video {
+	position:relative;	
+	margin-bottom:  20px;
+	background: url(bgr.png) no-repeat;
+	width: 39px;
+	height: 39px;
+	padding: 5px 0 0 13px;
+}
+
+div.jp-interface ul.jp-controls a {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+a.jp-play,
+a.jp-pause {
+	width:20px;
+	height:27px;
+}
+
+a.jp-play {
+	background: url("controls.png") no-repeat  0 0 ;
+}
+a.jp-play:hover {
+	background: url("controls.png") no-repeat -20px 0;
+}
+a.jp-pause {
+		background: url("controls.png") 0 -27px;
+	display: none;
+}
+a.jp-pause:hover {
+	background: url("controls.png") no-repeat -20px -27px;
+}
+
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.jp-playlist{
+	display:none;
+}
+
+div.jp-jplayer audio,
+div.jp-jplayer {
+	width:0px;
+	height:0px;
+}
+
+.controlA{
+	text-indent: -9000px;
+}
+ul.jp-toggles {
+	list-style-type:none;
+	padding:0;
+	margin:0 auto;
+	overflow:hidden;
+	
+}

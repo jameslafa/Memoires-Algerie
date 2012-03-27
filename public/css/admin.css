@@ -1,0 +1,606 @@
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/mixins.styl */
+
+/* line 5 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+body {
+  background-color: #f3f0e8;
+  font-family: helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+
+/* line 12 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+.admin_page .clearfix {
+  zoom: 1;
+}
+
+/* line 15 : /Users/james/Web/github/memoires-algerie/views/css/mixins.styl */
+.admin_page .clearfix:before,
+.admin_page .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 19 : /Users/james/Web/github/memoires-algerie/views/css/mixins.styl */
+.admin_page .clearfix:after {
+  clear: both;
+}
+
+/* line 14 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+.admin_page .notice {
+  background-color: #e3dcc9;
+  padding: 0.6em;
+  text-align: center;
+}
+
+/* line 19 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+.admin_page #header {
+  background-color: #7d6d41;
+}
+
+/* line 21 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+.admin_page #header h1 {
+  color: #f3f0e8;
+  display: inline;
+  font-size: 20px;
+  float: right;
+  padding-right: 30px;
+  text-shadow: 1px 1px 3px #333;
+  text-transform: uppercase;
+}
+
+/* line 29 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+.admin_page #header nav {
+  display: inline-block;
+  float: left;
+}
+
+/* line 33 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+a.action,
+span.action,
+input.action {
+  background-color: #e3dcc9;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #555;
+  -moz-box-shadow: 0 0 2px #555;
+  -o-box-shadow: 0 0 2px #555;
+  -ms-box-shadow: 0 0 2px #555;
+  box-shadow: 0 0 2px #555;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 47 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+a.action:hover,
+span.action:hover,
+input.action:hover {
+  background-color: #ebe6d8;
+  -webkit-box-shadow: 0 0 4px #222;
+  -moz-box-shadow: 0 0 4px #222;
+  -o-box-shadow: 0 0 4px #222;
+  -ms-box-shadow: 0 0 4px #222;
+  box-shadow: 0 0 4px #222;
+}
+
+/* line 50 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+a.action.secondary,
+span.action.secondary,
+input.action.secondary {
+  background-color: transparent;
+}
+
+/* line 53 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+#messages {
+  margin: 30px auto;
+  width: 700px;
+}
+
+/* line 56 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+#messages ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+/* line 60 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+#messages ul.error {
+  background: rgba(255,0,0,0.10);
+  border: 1px solid #bbb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #888;
+  -moz-box-shadow: 0 0 5px #888;
+  -o-box-shadow: 0 0 5px #888;
+  -ms-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+}
+
+/* line 65 : /Users/james/Web/github/memoires-algerie/views/css/admin.styl */
+#messages ul li {
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+/* line 22 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+
+/* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login .logo {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* line 6 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login .logo a {
+  margin: 5px 20px;
+}
+
+/* line 9 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login form {
+  line-height: 40px;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* line 14 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login form label {
+  display: inline-block;
+  padding-right: 10px;
+  text-align: right;
+  width: 140px;
+}
+
+/* line 19 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login form input {
+  width: 170px;
+}
+
+/* line 21 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login form #login_buttons {
+  line-height: 18px;
+  margin-left: 135px;
+  text-align: center;
+}
+
+/* line 25 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login form #login_buttons #login_button {
+  margin-left: 0;
+  width: auto;
+}
+
+/* line 28 : /Users/james/Web/github/memoires-algerie/views/css/admin/login.styl */
+#admin_login form #login_buttons a {
+  display: inline-block;
+}
+
+/* line 30 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/main.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/main.styl */
+
+/* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/main.styl */
+#admin_main section {
+  -webkit-box-shadow: 0 0 5px #000;
+  -moz-box-shadow: 0 0 5px #000;
+  -o-box-shadow: 0 0 5px #000;
+  -ms-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  width: 700px;
+}
+
+/* line 10 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/main.styl */
+#admin_main section h2 {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 17 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/main.styl */
+#admin_main section a.action {
+  display: inline-block;
+}
+
+/* line 19 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+
+/* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list .actions {
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+  text-align: center;
+  width: 70%;
+}
+
+/* line 8 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list .actions input {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 20px;
+  margin: 0 10px;
+  padding: 4px 10px;
+  width: 150px;
+}
+
+/* line 15 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list {
+  font-size: 14px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 21 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li {
+  border-bottom: 1px solid #f4f2ea;
+  border-top: 1px solid #e3dcc9;
+  padding: 10px 0;
+}
+
+/* line 26 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li:nth-child(odd) {
+  background-color: #e3dcc9;
+}
+
+/* line 28 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li:nth-child(even) {
+  background-color: #dbd1b9;
+}
+
+/* line 31 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li:first-child {
+  border-top: none;
+}
+
+/* line 33 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li:last-child {
+  border-bottom: none;
+}
+
+/* line 36 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li div {
+  display: inline-block;
+}
+
+/* line 39 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li .edit {
+  width: 10%;
+}
+
+/* line 41 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li .title {
+  width: 70%;
+}
+
+/* line 43 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li .status {
+  text-transform: capitalize;
+  width: 10%;
+}
+
+/* line 46 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/list.styl */
+#document_list ul.list li .type {
+  text-transform: capitalize;
+  width: 10%;
+}
+
+/* line 49 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+
+/* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 900px;
+}
+
+/* line 7 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset {
+  border: 1px solid #aaa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+/* line 12 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset legend {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 18 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline {
+  margin: 10px auto;
+}
+
+/* line 21 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline label {
+  color: #444;
+  display: inline-block;
+  font-size: 11px;
+  padding-right: 5px;
+  vertical-align: middle;
+  text-align: right;
+  text-transform: uppercase;
+  width: 145px;
+}
+
+/* line 31 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline label.top {
+  vertical-align: top;
+}
+
+/* line 34 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline select,
+#document_edit form fieldset .formline input {
+  background-color: #f9f8f4;
+  min-width: 200px;
+}
+
+/* line 38 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline select.long_input,
+#document_edit form fieldset .formline input.long_input {
+  width: 600px;
+}
+
+/* line 40 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline select.short,
+#document_edit form fieldset .formline input.short {
+  margin-left: 2px;
+  margin-right: 10px;
+  min-width: 0;
+  width: 95px;
+}
+
+/* line 46 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline select {
+  border: 1px solid #aaa;
+}
+
+/* line 49 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline .mceEditor {
+  display: inline-block;
+}
+
+/* line 51 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline .image {
+  text-align: center;
+}
+
+/* line 54 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .formline .image img {
+  height: auto;
+  width: 200px;
+}
+
+/* line 57 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .note {
+  color: #999;
+}
+
+/* line 60 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form fieldset .split_fields {
+  display: inline-block;
+  width: 50%;
+}
+
+/* line 63 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form .page_actions {
+  margin-left: 10px;
+}
+
+/* line 65 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit form .page_actions .cancel {
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+/* line 69 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit #doc_header {
+  background-color: #e3dcc9;
+  padding: 10px 20px;
+}
+
+/* line 72 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit #doc_header .title {
+  color: #333;
+  float: left;
+  text-shadow: 1px 1px #ccc;
+}
+
+/* line 76 : /Users/james/Web/github/memoires-algerie/views/css/admin/document/edit.styl */
+#document_edit #doc_header .status {
+  float: right;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 80 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+
+/* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+#tags_list .actions {
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+  text-align: center;
+  width: 70%;
+}
+
+/* line 8 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+#tags_list .actions label {
+  color: #333;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* line 12 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+#tags_list .actions input {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 20px;
+  margin: 0 10px;
+  padding: 4px 10px;
+  width: 150px;
+}
+
+/* line 20 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+
+/* line 21 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+#tags_list ul.list li {
+  display: inline-block;
+}
+
+/* line 24 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+
+/* line 25 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+
+/* line 26 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+#tag h1 .tag {
+  color: #aaa;
+  text-shadow: 1px 1px 1px #333;
+}
+
+/* line 29 : /Users/james/Web/github/memoires-algerie/views/css/admin/tag/list.styl */
+#tag ul.tags {
+  list-style-type: none;
+}
+
+/* line 31 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+
+/* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list ul.users {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px auto;
+  width: 990px;
+}
+
+/* line 8 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list ul.users span {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+}
+
+/* line 12 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+
+/* line 13 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list ul.users .header span {
+  font-weight: bold;
+}
+
+/* line 15 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+
+/* line 16 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list ul.users .user:nth-child(odd) {
+  background-color: #e3dcc9;
+}
+
+/* line 18 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list ul.users .user:nth-child(even) {
+  background-color: #dbd1b9;
+}
+
+/* line 20 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list ul.users .user span.edit {
+  width: 90px;
+}
+
+/* line 24 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list form#add_user {
+  margin: 50px auto 10px auto;
+  width: 990px;
+}
+
+/* line 27 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list form#add_user label {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 5px;
+  text-align: right;
+  width: 120px;
+}
+
+/* line 33 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/list.styl */
+#user_list form#add_user input {
+  width: 130px;
+}
+
+/* line 35 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
+
+/* line 2 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
+#user_edit form#edit_user {
+  margin: 50px auto 10px auto;
+  width: 500px;
+}
+
+/* line 5 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
+#user_edit form#edit_user label {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 40px;
+  margin-right: 10px;
+  text-align: right;
+  width: 150px;
+}
+
+/* line 12 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
+#user_edit form#edit_user input {
+  width: 150px;
+}
+
+/* line 14 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
+#user_edit form#edit_user input#admin {
+  margin: 0;
+}
+
+/* line 16 : /Users/james/Web/github/memoires-algerie/views/css/admin/user/edit.styl */
+#user_edit form#edit_user #submit {
+  margin-left: 162px;
+}

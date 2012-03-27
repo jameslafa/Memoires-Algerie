@@ -1,0 +1,86 @@
+aside.sidebar
+
+	div.filterForm
+		div.choixEvenement
+			span#enc2.color_1
+			a.question.lightbox(href="##{periods[0].key}", title="En savoir plus") En savoir plus
+			h2.title_period #{periods[0].title}
+			div.clear
+		
+		h3 
+			|Recherchez parmi les documents
+		
+		p
+			input#searchall.input(type="text", placeholder="Titre, ville, nom ou auteur")
+		
+		//-div.tog Recherche détaillée
+		
+		//-div.togC
+			p
+				input#item_1.styled(type="checkbox")
+				label(for="item_1") item
+			p
+				input#item_2.styled(type="checkbox")
+				label(for="item_2") item
+			p
+				input#item_3.styled(type="checkbox")
+				label(for="item_3") item
+
+		a#searchbutton.bt(href="#", title="Lancer la recherche") Lancer la recherche
+		div.clear
+
+	
+	//-div.filterResult
+		h3 Filtrez les résultats
+		h4 Par type
+		div.type
+			p
+				input#item_4.styled(type="checkbox", name="#")
+				label(for="item_4") Archives personnelles
+			p
+				input#item_5.styled(type="checkbox", name="#")
+				label(for="item_5") Archives personnelles
+			p
+				input#item_6.styled(type="checkbox", name="#")
+				label(for="item_6") Archives personnelles
+
+		
+		h4 Par ville
+		
+		div.blocSelect
+			select.styled(name="choix_ville")
+				option Choisissez une ville
+				option ville 1
+				option ville 2
+			div.clear
+
+		div.tog Plus de critères
+		
+		div.togC
+			p
+				input#item_7.styled(type="checkbox")
+				label(for="item_7") item
+			p
+				input#item_8.styled(type="checkbox")
+				label(for="item_8") item
+			p
+				input#item_9.styled(type="checkbox")
+				label(for="item_9") item
+
+		
+		a.bt(href="#", title="Filtrer les résultats") Filtrer les résultats
+		div.clear
+
+section#evntCol.color_1
+section.main
+
+	div#resultDoc
+	
+	a.bt.bt_more(href="#", rel="")
+		| 20 suivants
+	
+	//- a.bt.bt_top(href="#top")
+		| Remonter
+	
+	div.clear		
+div.clear

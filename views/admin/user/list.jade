@@ -1,0 +1,38 @@
+#user_list.admin_page
+	#header.clearfix
+		nav
+			a.action(href="/admin/main") Accueil
+			a.action.secondary(href="/admin/logout") Deconnexion
+		h1 
+			|Liste des utilisateurs
+
+	ul.users
+		li.header
+			span.name Nom complet
+			span.login Login
+			span.admin Administrateur
+		- each user in users
+			//- if (user.login != 'admin')
+			li.user
+				span.admin #{user.name} 
+				span.login #{user.login}
+				span.admin
+					- if (user.login)
+						| OUI
+					- else
+						| NON
+				span.edit
+					a.action(href="/admin/user/edit/" + user.login) Edit
+
+	form#add_user
+		fieldset
+			legend Ajouter un nouvel utilisateur
+			label(for='login') Login
+			input#login(name='login')
+			label(for='name') Nom complet
+			input#name(name='name')
+			label(for='password') Password
+			input#password(name='password', type='password')
+			input#submit.action(type='submit', value='Ajouter')
+
+			

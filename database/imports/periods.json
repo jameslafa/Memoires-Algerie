@@ -1,0 +1,44 @@
+[
+	{
+		"begin": "1954-01-11T00:00:00.000Z",
+		"end": "1955-08-20T00:00:00.000Z",
+		"title": "Drôle de guerre",
+		"description": "L'Algérie, c'est la France dit Mitterrand. Le FLN est encore une organisation de petite taille et fragile. Pour beaucoup d'habitants de l'Algérie, ce n'est pas encore la guerre.",
+		"key" : "drole_de_guerre"
+	},
+	{
+		"begin": "1955-08-21T00:00:00.000Z",
+		"end": "1956-08-20T00:00:00.000Z",
+		"title": "La plongée dans la guerre",
+		"description": "20 août 1955 : insurrection du Nord-Constantinois (après le vote de l'état d'urgence en avril). La guerre s'installe désormais. Le FLN s'affirme progressivement : il négocie avec ses rivaux (UDMA et PCA) pour obtenir leur disparition en tant que partis capables de développer d'autres formes d'actions (notamment sociales et syndicales) en soutien à la lutte armée.",
+		"key" : "plongee_dans_guerre"
+	},
+	{
+		"begin": "1956-08-21T00:00:00.000Z",
+		"end": "1958-05-29T00:00:00.000Z",
+		"title": "Guerre totale, guerre asymétrique",
+		"description": "Le FLN, désormais solidement organisé, fait des choix, notamment celui de mener la guerre dans Alger et d'internationaliser le conflit avec de spectaculaires mobilisations de la population. Côté français, on voit aussi attentats et ratonnades. A partir de janvier 1957, les militaires détiennent les pouvoirs de police dans Alger. C'est le début de la \"Bataille d'Alger\".",
+		"key" : "guerre_totale_asymetrique"
+	},
+	{
+		"begin": "1958-05-30T00:00:00.000Z",
+		"end": "1962-03-19T00:00:00.000Z",
+		"title": "La difficile marche vers la négociation",
+		"description": "De Gaulle revient au pouvoir à partir de la période entre mai et septembre 1958. Le GPRA est créé. Les acteurs de la négocation sont en place. Il leur faudra plusieurs années pour se parler. C'est la période de vastes opérations militaires (Jumelles). Au sein même du GPRA, les plus politiques osnt remplacés (Ferhat Abbas par Ben Khedda).",
+		"key" : "difficile_marche_vers_negociation"
+	},
+	{
+		"begin": "1962-03-20T00:00:00.000Z",
+		"end": "1962-05-07T00:00:00.000Z",
+		"title": "La période transitoire",
+		"description": "Le cessez-le-feu est signé à Evian le 19 mars 1962. Se pose la question de l'installation progressive d'un Etat algérien (exécutif et provisoir de Rocher Noir). L'OAS pousse la violence à son paroxysme avec des attentats tous azimuts. Des enlèvements d'Européens par le FLN ont lieu, ainsi que des massacres de harkis que l'armée française abandonne sur place.",
+		"key" : "periode_transitoire"
+	},
+	{
+		"begin": "1962-05-08T00:00:00.000Z",
+		"end": "1962-09-29T00:00:00.000Z",
+		"title": "L'été de la discorde",
+		"description": "Le GPRA est revenu à Alger juste avant l'indépendance du 5 juillet. L'armée des frontières arrive à Alger en septembre 1962 après avoir mené des violences en route. Ben Bella forme le groupe de Tlemcen qui conteste l'autorité du GPRA. Des manifestations populaires scandent : \"seb'a snin barakat\" (\"sept ans -de guerre- ça suffit\").",
+		"key" : "ete_discorde"
+	}
+]

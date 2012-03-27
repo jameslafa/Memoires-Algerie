@@ -1,0 +1,13 @@
+section.timeline
+	div.dates
+		img(src="/images/date.png", alt="dates")
+	
+	ul
+		- each period, index in periods
+			- index_class = index+1
+			li(class="color_#{index_class}", id="period_#{period.key}")
+				a.tooltip(href="#", title="#{period.title}", rel="#{period.key}")
+					span #{period.title}
+			
+			
+	div.clear

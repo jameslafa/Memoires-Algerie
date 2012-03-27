@@ -1,0 +1,165 @@
+#document_edit.admin_page
+	#header.clearfix
+		nav
+			a.action(href="/admin/main") Accueil
+			a.action(href="/admin/documents/") Liste des documents		
+			a.action.secondary(href="/admin/logout") Deconnexion
+		h1 Ajouter un document
+
+	#doc_header.clearfix
+		.title #{document.title}
+		.status #{document.status}
+	!= messages()
+	form(method="post", enctype='multipart/form-data')
+		fieldset
+			legend Description du document
+			.formline
+				label(for='title') Titre:
+				input#title.long_input(name='title', value='#{document.title}')
+			.formline
+				label.top(for='description') Résumé:
+				textarea#description(name='description', cols="83", rows="5") #{document.description}
+			.formline
+				label.top(for='text') Texte:
+				textarea#text(name='text', cols="83", rows="25") #{document.text}
+
+			.formline
+				label(for='author') Nom de l'auteur:
+				input#author(name='doc_author', value='#{document.doc_author}')
+			.formline
+				label(for='edition_date') Date d'édition:
+				input#edition_date.short(name='doc_date', value='#{document.formatted_doc_date}')
+				span.note (JJ/MM/AAAA)
+			.formline
+				label(for='language') Langue du document:
+				select#language(name='doc_language')
+					option(value="") Sélectionner une langue
+					option(value="dz", selected=(document.doc_language == "dz")) Arabe
+					option(value="fr", selected=(document.doc_language == "fr")) Française
+			.formline
+				label(for='people') Nom cités:
+				input#people.long_input(name='people', value='#{document.joined_people}')
+			.formline
+				label(for='tags') Tags:
+				input#tags.long_input(name='tags', value='#{document.joined_tags}')
+		fieldset
+			legend Typologie du document
+			.formline 
+				label(for='source') Source:
+				select#source(name='source')
+					option(value="") Sélectionner une source
+					option(value="administrative", selected=(document.source == "administrative")) Archive administrative
+					option(value="militaire", selected=(document.source == "militaire")) Archive militaire
+					option(value="personnelle", selected=(document.source == "personnelle")) Archive personnelle
+			.formline
+				label(for='origin') Origine:
+				select#origin(name='origin')
+					option(value="") Sélectionner une origine
+					option(value="dz", selected=(document.origin == "dz")) Algérie
+					option(value="eg", selected=(document.origin == "eg")) Egypte
+					option(value="fr", selected=(document.origin == "fr")) France
+					option(value="ma", selected=(document.origin == "ma")) Maroc
+					option(value="tn", selected=(document.origin == "tn")) Tunisie
+			.formline 
+				label(for='type') Type:
+				select#type(name='type')
+					option(value="") Sélectionner un type
+					option(value="operation", selected=(document.type == "operation")) Bilan d'opération
+					option(value="interrogatoire", selected=(document.type == "interrogatoire")) Interrogatoire
+					option(value="renseignement", selected=(document.type == "renseignement")) Renseignement
+					option(value="temoignage", selected=(document.type == "temoignage")) Témoignage
+		fieldset
+			legend Organisation temporelle
+			.formline
+				label Dates clés:
+				input.long_input(name='key_dates', placeholder='valeurs séparées par des virgules', value='#{document.joined_key_dates}')
+			//-.formline
+				label.top Événements:
+				.periods
+					- each period in periods
+						.period 
+							.title #{period.title}
+							.checkboxes
+								- each event in period.events							
+									input(type='checkbox', name='events', value='#{event.key}', checked=event.checked) 
+									span.checkbox_label #{event.name_dz}
+									br	
+		fieldset#locations
+			legend Localisation Geographique
+			.location_container
+				- each location, index in document.locations
+					.location(locationid=index)
+						.formline
+							label Pays:
+							select(name='location[#{index}][country]')
+								option(value="") Sélectionner un pays
+								option(value="dz", selected=(location.country == "dz")) Algérie
+								option(value="eg", selected=(location.country == "eg")) Egypte
+								option(value="fr", selected=(location.country == "fr")) France
+								option(value="ma", selected=(location.country == "ma")) Maroc
+								option(value="tn", selected=(location.country == "tn")) Tunisie
+						.formline
+							label Ville:
+							input(name='location[#{index}][town]', value="#{location.town}")
+						.formline
+							label Lieu-dit:
+							input(name='location[#{index}][locality]', value="#{location.locality}")
+						.formline
+							.split_fields
+								label Wilaya guerre:
+								select(name='location[#{index}][wilaya_old]')
+									option(value="") Sélectionner une Wilaya guerre
+									- each wilaya_old in wilayas_old
+										option(value="#{wilaya_old}", selected=(location.wilaya_old == wilaya_old)) #{wilaya_old}
+							.split_fields
+								label Wilaya actuelle:
+								select(name='location[#{index}][wilaya_actual]')
+									option(value="") Sélectionner une Wilaya actuelle
+									- each wilaya_actual in wilayas_actual
+										option(value="#{wilaya_actual}", selected=(location.wilaya_actual == wilaya_actual)) #{wilaya_actual}
+						.formline
+							label Département:
+							select(name='location[#{index}][departement]')
+								option(value="") Sélectionner un département
+								- each departement in departements
+									option(value="#{departement}", selected=(location.departement == departement)) #{departement}
+						.formline
+								label Latitude/Longitude:
+								input.short(name='location[#{index}][lat]', value="#{location.coordinates[1]}")
+								input.short(name='location[#{index}][lon]', value="#{location.coordinates[0]}")								
+								a.action(href="http://www.toutimages.com/google_gps/sis_gps.htm", target="_blank") Trouver les coordonnées
+						.formline
+							a.action.secondary.remove_location(href='#', locationid=index) Supprimer cette localisation
+			a.action.add_location(href='#') Ajouter une localisation
+		fieldset#medias
+			legend Contenu multimédia lié
+			.media_container
+				- each media, index in document.medias	
+					.media(mediaid=index)				
+						.formline
+							label Titre:
+							input.long_input(name='medias[#{index}][title]', value="#{media.title}")
+						.formline
+							label.top Description:
+							textarea(name='medias[#{index}][description]', cols="83", rows="5") #{media.description}
+						.formline
+							label Crédits:
+							input(name='medias[#{index}][credits]', value="#{media.credits}")							
+						- if (media.type == "photo")
+							.formline.media_photo
+								img(src='#{media.file}')
+						- else if (media.type == "audio")
+							.formline.media_audio
+								a(href='#{media.file}', target='_blank') #{media.file}
+						.formline
+							input(type='hidden', name='medias[#{index}][id]', value=media._id)
+							a.remove_media(href='#', mediaid=index) Supprimer ce média
+			a.action.add_media(href='#') Ajouter un nouveau contenu multimédia
+
+		.page_actions
+			input.action(type='submit', name="submit", value="Publier")
+			input.action(type='submit', name="submit", value="Enregistrer brouillon")			
+			input.action.secondary(type='submit', name="submit", value="Supprimer")
+
+include ../../includes/footer
+

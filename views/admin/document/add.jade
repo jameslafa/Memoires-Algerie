@@ -1,0 +1,105 @@
+#document_edit.admin_page
+	#header.clearfix
+		nav
+			a.action(href="/admin/main") Accueil
+			a.action(href="/admin/documents/") Liste des documents		
+			a.action.secondary(href="/admin/logout") Deconnexion
+		h1 Ajouter un document
+
+	!= messages()
+	form(method="post", enctype='multipart/form-data')
+		fieldset
+			legend Description du document
+			.formline
+				label(for='title') Titre:
+				input#title.long_input(name='title')
+			.formline
+				label.top(for='description') Résumé:
+				textarea#description(name='description', cols="83", rows="5")
+			.formline
+				label.top(for='text') Texte:
+				textarea#text(name='text', cols="83", rows="25")
+
+			.formline
+				label(for='author') Nom de l'auteur:
+				input#author(name='doc_author')
+			.formline
+				label(for='edition_date') Date d'édition:
+				input#edition_date.short(name='doc_date')
+				span.note (JJ/MM/AAAA)
+			.formline
+				label(for='language') Langue du document:
+				select#language(name='doc_language')
+					option(value="") Sélectionner une langue
+					option(value="dz") Arabe
+					option(value="fr") Française
+			.formline
+				label(for='people') Nom cités:
+				input#people.long_input(name='people', placeholder='valeurs séparées par des virgules')
+			.formline
+				label(form='tags') Tags:
+				input#tags.long_input(name='tags')
+
+		fieldset
+			legend Typologie du document
+			.formline 
+				label(for='source') Source:
+				select#source(name='source')
+					option(value="") Sélectionner une source
+					option(value="administrative") Archive administrative
+					option(value="militaire") Archive militaire
+					option(value="personnelle") Archive personnelle
+			.formline
+				label(for='origin') Origine:
+				select#origin(name='origin')
+					option(value="") Sélectionner une origine
+					option(value="dz") Algérie
+					option(value="eg") Egypte
+					option(value="fr") France
+					option(value="ma") Maroc
+					option(value="tn") Tunisie
+			.formline 
+				label(for='type') Type:
+				select#type(name='type')
+					option(value="") Sélectionner un type
+					option(value="operation") Bilan d'opération
+					option(value="interrogatoire") Interrogatoire
+					option(value="renseignement") Renseignement
+					option(value="temoignage") Témoignage
+						
+		fieldset
+			legend Organisation temporelle
+			.formline
+				label Dates clés:
+				input.long_input(name='key_dates', placeholder='valeurs séparées par des virgules')
+			//-.formline
+				label.top Événements:
+				.periods
+					- each period in periods
+						.period 
+							.title #{period.title}
+							.checkboxes
+								- each event in period.events							
+									input(type='checkbox', name='events', value='#{event.key}') 
+									span.checkbox_label #{event.name_dz}
+									br
+
+		fieldset#locations
+			legend Localisation Geographique
+			.location_container
+			a.add_location.action(href='#') Ajouter une localisation
+
+		fieldset#medias
+			legend Contenu multimédia lié
+			.media_container
+			a.add_media.action(href='#') Ajouter un nouveau contenu multimédia
+
+		.page_actions
+			input.action(type='submit', name="submit", value="Publier")
+			input.action(type='submit', name="submit", value="Enregistrer brouillon")
+			a.action.secondary(href='#') Annuler l'ajout du document
+					
+include ../../includes/footer
+
+				
+

@@ -1,0 +1,48 @@
+#document_list
+	.actions
+		margin 0 auto
+		padding 20px 0 40px 0
+		text-align center
+		width 70%
+
+		input
+			border 1px solid #ddd
+			border-radius 5px
+			line-height 20px
+			margin 0 10px
+			padding 4px 10px
+			width 150px
+	ul.list
+		font-size 14px
+		list-style-type none
+		padding 0
+		margin 0
+
+		li
+			border-bottom 1px solid lighten(backgroundcolor, 10%)
+			border-top 1px solid darken(backgroundcolor, 10%)
+			padding 10px 0
+
+			&:nth-child(odd)
+				background-color : darken(backgroundcolor, 10%)
+			&:nth-child(even)
+				background-color : darken(backgroundcolor, 15%)	
+
+			&:first-child
+				border-top none
+			&:last-child
+				border-bottom none
+
+			div
+				display inline-block
+
+			.edit
+				width 10%
+			.title
+				width 70%
+			.status
+				text-transform : capitalize;
+				width 10%
+			.type
+				text-transform : capitalize;
+				width 10%

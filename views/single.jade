@@ -1,0 +1,62 @@
+div#singleDetail
+	div.title
+		a.bt.bt_retour(href="", title="") 
+			span 
+			| Retour à la liste des documents
+		
+		h2.titreDoc 
+			|Titre du document
+			span.dateDoc 
+				| Date de création
+		
+		div.clear
+		
+	aside.sidebar
+		.sidegroup
+			h3 Résumé
+			p.resume			
+		.sidegroup	
+			h3 Auteur
+			p.author
+		.sidegroup
+			h3 Source
+			p.source
+			h3 Type de document
+			p.typeDoc
+			h3 pays d’origine
+			p.paysOrigin
+		.sidegroup
+			h3 villes citées
+			p.villeC		
+			h3 Dates citées
+			p.dateC		
+			h3 Noms cités
+			p.nomC
+		.sidegroup
+			h3 Thèmes
+			div.tags
+			
+		
+	section.main
+		div.mainTop
+	
+			div.texte				
+			
+			div.mainRight		
+				div.medias
+					h3 Médias
+					ul.mediasList
+						li.type_image
+							
+						li.type_son
+							
+				//-div.partage
+					h3 partagez ce document
+					a.bt_facebook(href="")
+					a.bt_twitter(href="")
+					a.bt_googlePlus(href="")
+					div.clear
+			div.clear
+		div#comments		
+	div.clear
+			

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markers>
+	<marker id="tifra" name="Tifra" lat="36.6666667" lng="4.7" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="tizi ouzou" name="Tizi Ouzou" lat="36.7166667" lng="4.05" nbdoc="2" militaire="1" personnelle="0" administrative="1" />
+	<marker id="alger" name="Alger" lat="36.752887" lng="3.042048" nbdoc="2" militaire="0" personnelle="0" administrative="2" />
+	<marker id="ouargl" name="Ouargl" lat="31.96298" lng="5.342011" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="tessala" name="Tessala" lat="35.2426267" lng="-0.7699198" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="bord bou arreridj" name="Bord Bou Arreridj" lat="36.1061122" lng="5.0740019" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="cap aokas" name="Cap Aokas" lat="36.6437425" lng="5.2384132" nbdoc="2" militaire="0" personnelle="2" administrative="0" />
+	<marker id="paris" name="Paris" lat="48.856614" lng="2.3522219" nbdoc="2" militaire="0" personnelle="0" administrative="2" />
+	<marker id="oran" name="Oran" lat="35.6272946" lng="-0.5801695" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+</markers>

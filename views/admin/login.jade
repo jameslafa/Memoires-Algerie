@@ -1,0 +1,19 @@
+#admin_login.admin_page
+	.logo
+		a.owni(href="http://www.owni.fr", target="_blank", title="Owni")
+			img(src="/images/logo_owni.png", alt="Owni")
+		a(href="#", target="_blank")
+			img(src="/images/logo_elwatan.png", alt="El Watan")
+
+	!= messages()
+	form(method="POST")
+		label(for="login") Login
+		input#login(name="login")
+		br
+		label(for="password") Password
+		input#login(type="password", name="password")
+		br
+		#login_buttons
+			input#login_button.action(type="submit", value="Se loguer")
+			a#go_back.action.secondary(href="/") Cancel
+include ../includes/footer

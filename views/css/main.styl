@@ -1,0 +1,932 @@
+@import "reset.styl"
+
+body
+	background #f3f0e8
+	font-family 'Ubuntu', sans-serif
+	font-weight 400
+	color #383838
+	line-height 16px
+
+/***************** STRUCTURE ******************/
+
+#wrapper
+	width 989px
+	min-height 600px
+	margin 0 auto
+	background url('../images/fond.jpg') repeat-y
+	-moz-box-shadow 0px 3px 5px 0px #656565
+	-webkit-box-shadow 0px 3px 5px 0px #656565
+	-o-box-shadow 0px 3px 5px 0px #656565
+	box-shadow 0px 3px 5px 0px #656565
+
+header
+	padding 0 10px 0 20px
+	margin-bottom 10px
+
+
+#bloc_map, #bloc_timeline, #single
+	-moz-transition all 0.24s ease-out 0s
+	-webkit-transition all 0.24s ease-out 0s
+	-moz-transition all 0.24s ease-out 0s
+	-o-transition all 0.24s ease-out 0s
+	-ms-transition all 0.24s ease-out 0s
+	transition all 0.24s ease-out 0s
+	height 0
+	overflow hidden
+
+
+body.screen-map
+	#bloc_map
+		height 480px
+
+body.screen-timeline
+	#bloc_timeline
+		min-height 270px
+		height auto
+		
+body.screen-document
+	#single
+		min-height 400px
+		height auto
+	.timeline
+		display none
+
+.contentBloc
+	width 960px
+	margin 0 auto
+	position relative
+
+.sidebar
+	margin-top 10px
+	width 260px
+	padding 10px
+	min-height 300px
+	float left
+	font-size 14px
+	font-weight 300
+	background url('../images/transG.png') repeat
+
+.main
+	margin-top 10px
+	width 650px
+	min-height 300px
+	float right
+
+/*************  HEADER  ************/
+
+.logo
+	width 312px
+	height 118px
+	float left
+	margin 10px 0 0 10px
+	a
+		width 312px
+		height 118px
+		background url('../images/sprite.png') no-repeat 0 -224px
+
+.rightH
+	width 610px
+	float right
+
+.partenaires
+	width 250px
+	padding-top 10px
+	float left
+	margin-bottom 25px
+	img
+		vertical-align middle
+
+.partenaires a
+	padding-top 3px
+	display block
+	float left
+
+.partenaires .owni
+	height 27px
+	border-right 2px solid #704715
+	padding-right 8px
+	margin-right 8px
+	padding-top 4px
+
+header nav
+	float left
+	margin-left 15px
+	ul
+		width 183px
+		height 54px
+		margin 0
+		padding 0
+		li
+			float left
+			a
+				display block
+				width 88px
+				height 54px
+				text-indent -9000px
+			.bt_timeline
+				width 94px
+	.page-map
+		background url('../images/sprite.png') no-repeat -216px 0
+	.page-timeline
+		background url('../images/sprite.png') no-repeat -216px -54px
+		
+
+.temoignez
+	float right
+
+#jp_container_1
+	width 52px
+	height 44px
+	float right
+	margin-left 4px
+
+.bt_lecteur
+	width 52px
+	height 44px
+	float right
+	background url('../images/sprite.png') no-repeat -158px 0
+	margin-left 4px
+
+	&.active
+		background url('../images/sprite.png') no-repeat -158px -44px
+
+
+.bt_comprendre
+	width 127px
+	height 44px
+	float right
+	background url('../images/sprite.png') no-repeat 0 -136px
+	&:hover
+		background url('../images/sprite.png') no-repeat 0 -180px
+
+.temoignez span
+	float left
+	margin-top 10px
+	text-align right
+	color #3f3f3f
+	font-size 16px
+	font-weight 500
+
+.bt_temoignez
+	width 158px
+	height 68px
+	background url('../images/sprite.png') no-repeat 0 0
+	float right
+	margin-left 5px
+	&:hover
+		background url('../images/sprite.png') no-repeat 0 -68px
+
+/***************** CARTE  *************************/
+
+.blocMap
+	width 930px
+	margin 0 auto
+	margin-bottom 20px
+	#map_canvas
+		width 100%
+		height 450px
+		text-align center
+		border 3px solid #fff
+	.choixEvenement
+		width 500px
+	#map
+		width 100%
+		height 450px
+		text-align center
+		border 3px solid #fff
+
+.choixEvenement
+	padding 10px 20px 10px 20px
+	background url('../images/transW.png') repeat
+	position relative
+	-moz-box-shadow 2px -1px 6px 0px #656565
+	-webkit-box-shadow 2px -1px 6px 0px #656565
+	-o-box-shadow 2px -1px 6px 0px #656565
+	box-shadow 2px -1px 6px 0px #656565
+	#enc, #enc2
+		width 17px
+		height 15px
+		position absolute
+		top 2px
+		left 1px
+	#enc.color_1, #enc2.color_1
+		background url('../images/sprite.png') no-repeat -375px -264px
+	#enc.color_2, #enc2.color_2
+		background url('../images/sprite.png') no-repeat -375px -279px
+	#enc.color_3, #enc2.color_3
+		background url('../images/sprite.png') no-repeat -375px -294px
+	#enc.color_4, #enc2.color_4
+		background url('../images/sprite.png') no-repeat -375px -309px
+	#enc.color_5, #enc2.color_5
+		background url('../images/sprite.png') no-repeat -375px -324px
+	#enc.color_6, #enc2.color_6
+		background url('../images/sprite.png') no-repeat -375px -339px
+
+
+	.question
+		width 29px
+		height 29px
+		margin-right 10px
+		float left
+		background url('../images/sprite.png') no-repeat -179px -108px
+	h2
+		width 460px
+		margin 8px 0 0 0
+		font-size 16px
+		text-transform uppercase
+		font-weight 400
+		float left
+	.blocSelect
+		float right
+		height 32px
+		position relative
+		margin-bottom 20px
+
+.choixEvenement.all
+	display none
+	
+.infoW
+	text-align left
+	font-size 14px
+	line-height 15px
+	color #3f3f3f
+	h2
+		font-size 14px
+		text-transform uppercase
+		margin-bottom 5px
+	span
+		display block
+		margin-bottom 5px
+	ul
+		margin-bottom 10px
+	
+	
+		
+.timeline
+	padding 5px 0 0 0
+	background url('../images/trans2.png') repeat
+	.dates
+		height 16px
+		padding-left 4px
+		margin-bottom 20px
+	ul 
+		li
+			float left
+			position relative
+			height 12px
+			a
+				width 100%
+				height 12px
+				position absolute
+				text-decoration none
+				color #222
+				bottom 0
+				left 0
+				-moz-box-shadow 0px -1px 2px 0px #343434
+				-webkit-box-shadow 0px -1px 2px 0px #343434
+				-o-box-shadow 0px -1px 2px 0px #343434
+				box-shadow 0px -1px 2px 0px #343434
+				-moz-transition all 0.12s ease-out 0s
+				-webkit-transition all 0.12s ease-out 0s
+				-moz-transition all 0.12s ease-out 0s
+				-o-transition all 0.12s ease-out 0s
+				-ms-transition all 0.12s ease-out 0s
+				transition all 0.12s ease-out 0s
+				span
+					visibility hidden
+					position absolute
+					bottom 30px
+					left 20px
+					z-index 999
+					min-width 200px
+					width auto
+					padding 10px
+					opacity .2
+					background-color #faf9f8
+					background-image -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0))
+					background-image -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0))
+					background-image -ms-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0))
+					background-image -o-linear-gradient
+					background-image linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0))
+					-moz-border-radius 4px
+					border-radius 4px
+					-moz-box-shadow 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset
+					-webkit-box-shadow 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset
+					box-shadow 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset
+					text-shadow 0 1px 0 rgba(255,255,255,.4)
+					-moz-transition all 0.12s ease-out 0s
+					-webkit-transition all 0.12s ease-out 0s
+					-moz-transition all 0.12s ease-out 0s
+					-o-transition all 0.12s ease-out 0s
+					-ms-transition all 0.12s ease-out 0s
+					transition all 0.12s ease-out 0s
+					&:before
+						content ""
+						position absolute
+						z-index 1000
+						bottom -26px
+						left 10%
+						width 25px
+						height 26px
+						background url('../images/sprite.png') no-repeat -375px -108px
+			a:hover
+				height 24px
+				border 0
+				span
+					visibility visible
+					bottom 48px
+					left 20px
+					opacity .9
+		li.color_1,
+		li.color_1 a
+			width 104px
+			background url('../images/color_rouge.png') repeat
+		li.color_2,
+		li.color_2 a
+			width 125px
+			background url('../images/color_marron.png') repeat
+			span:before
+				background url('../images/sprite.png') no-repeat -375px -134px
+		li.color_3,
+		li.color_3 a
+			width 219px
+			background url('../images/color_jaune.png') repeat
+			span:before
+				background url('../images/sprite.png') no-repeat -375px -160px
+		li.color_4,
+		li.color_4 a
+			width 468px
+			background url('../images/color_vert.png') repeat
+			span:before
+				background url('../images/sprite.png') no-repeat -375px -186px
+		li.color_5,
+		li.color_5 a
+			width 42px
+			background url('../images/color_olive.png') repeat
+			span:before
+				background url('../images/sprite.png') no-repeat -375px -212px
+				position absolute
+				left 182px
+			span
+				position absolute
+				left -170px
+			&:hover 
+				span
+					position absolute
+					left -170px
+		li.color_6,
+		li.color_6 a
+			width 31px
+			background url('../images/color_bleu.png') repeat
+			span:before
+				background url('../images/sprite.png') no-repeat -375px -238px
+				position absolute
+				left 192px
+			span
+				position absolute
+				left -190px
+			&:hover 
+				span
+					position absolute
+					left -190px
+
+
+
+/*******************  SIDEBAR ********************/
+
+#document_edit form .formline.media_photo img
+	height auto
+	width 200px
+
+
+.sidebar 
+	.choixEvenement
+		padding 10px 20px 10px 10px
+		margin-bottom 20px
+		.question
+			margin-bottom 5px
+		h2
+			width 190px
+			float left
+			margin 4px 0 10px 0
+	form
+		margin-bottom 20px
+		h3
+			margin-bottom 10px
+	h3
+		text-transform uppercase
+		font-size 14px
+		font-weight 400
+		padding 5px 0
+	h4
+		font-style italic
+		font-size 15px
+		margin-bottom 10px
+		font-weight 400
+	.type
+		margin-bottom 15px
+
+	p
+		clear both
+		margin-bottom 10px
+
+	#searchbutton
+		margin-top 20px
+
+.tog
+	margin 10px 0
+	font-size 14px
+	font-weight 300
+	background url('../images/sprite.png') no-repeat -238px -340px
+	padding-left 15px
+	cursor pointer
+
+.tog.active
+	background url('../images/sprite.png') no-repeat -238px -363px
+
+.togC
+	display none
+	margin-bottom 15px
+/******************* Resultat  *********************/
+
+
+#evntCol
+	width 12px
+	position absolute
+	height 100%
+	top 0
+	left 289px
+
+.color_1
+	background url('../images/color_rouge.png') repeat
+.color_2
+	background url('../images/color_marron.png') repeat
+.color_3
+	background url('../images/color_jaune.png') repeat
+.color_4
+	background url('../images/color_vert.png') repeat
+.color_5
+	background url('../images/color_olive.png') repeat
+.color_6
+	background url('../images/color_bleu.png') repeat
+
+.item_time
+	font-size 13px
+	padding 10px
+	background url('../images/transW.png') repeat
+	border 1px solid #fff
+	margin-bottom 15px
+	.left
+		font-size 15px
+		margin-bottom 15px
+	.sourceType
+		text-align right
+		font-weight 500
+		text-align right
+		font-size 14px
+	.left span,
+	.sourceType span
+		display block
+	h3
+		text-transform uppercase
+		margin-bottom 4px
+	.desc
+		margin-bottom 25px
+	
+.tags 
+	width 430px
+	float left;
+	li
+		float left
+		margin-right 5px
+		margin-bottom 5px
+		a
+			padding 3px 10px
+			display block
+			background #d3cebd
+			-webkit-border-radius 10px
+			-moz-border-radius 10px
+			border-radius 10px
+			text-decoration none
+			font-weight 300
+
+
+
+p.noDoc
+	padding-top 20px
+	font-style italic
+		
+.bt
+	width 146px
+	height 29px
+	padding 14px 5px 5px 5px
+	font-size 14px
+	line-height 15px
+	float right
+	text-align center
+	text-shadow 0 1px 0 #fff
+	display block
+	font-weight 500
+	cursor pointer
+	background url('../images/sprite.png') no-repeat -216px -108px
+	&:hover
+		background: url('../images/sprite.png') no-repeat -216px -156px
+
+
+
+.bt_consult
+	width 136px
+	height 37px
+	font-size 14px
+	line-height 16px
+	padding 6px 10px 5px 10px
+	text-transform uppercase
+	span
+		width 27px
+		height 26px
+		margin 3px 0 0 3px
+		display block
+		float left
+		background url('../images/sprite.png') no-repeat -131px -136px
+
+
+	
+.bt.bt_more
+	float right
+	margin 0
+.bt_more.none
+	display none
+	
+.bt.bt_top
+	float right
+	margin-bottom 20px
+
+/************************ SINGLE  *******************/
+
+#single
+	margin-bottom 15px
+	.title
+		padding 10px
+		background url('../images/transW.png') repeat
+		margin-bottom 16px
+		border 1px solid #fff
+		h2
+			color #3f3f3f
+			font-size 20px
+			line-height 22px
+			text-transform uppercase
+			span
+				display block
+				font-weight normal
+				font-size 18px
+		.bt
+			float left
+			width 146px
+			height 35px
+			font-size 12px
+			line-height 15px
+			padding 8px 5px 5px 5px
+			text-transform uppercase
+			margin-right 70px
+			span
+				width 27px
+				height 26px
+				margin 3px 0 0 3px
+				display block
+				float left
+				background url('../images/sprite.png') no-repeat -131px -162px
+	.sidebar
+		width 200px
+		font-size 12px
+		border 1px solid #fff
+		background url('../images/transW.png') repeat
+		.sidegroup
+			margin-bottom 20px
+			h3
+				margin 0
+			p
+				margin-bottom 5px
+				margin-left 10px
+			.tags 
+				width auto
+				float none;
+				li
+					margin 5px
+					&:first-child
+						margin-left 0
+		
+	.main
+		width 720px
+		.mainTop
+			padding 10px
+			border 1px solid #fff
+			background url('../images/transM.png') repeat
+			.texte
+				font-size 14px
+				line-height 18px
+				float left
+				width 465px
+				min-height 500px
+				padding-right 10px
+				border-right 1px solid #fff
+				text-align justify
+				p
+					margin 15px 0
+			.texte.none
+				display none
+			.mainRight
+				width 200px
+				float right
+			
+				h3
+					font-weight normal
+					text-transform uppercase
+					margin-bottom 10px
+				.medias
+					margin-bottom 50px
+					.item 
+						width 200px
+						float left
+						border-top 1px solid #cabfa1
+						padding-top 5px
+						font-size 12px
+						margin-bottom 5px
+						img
+							width 50px;
+							vertical-align middle
+							margin-right 10px
+							border 3px solid #fff;
+							float left
+						span.name
+							width 130px
+							float right
+							span.credits
+								color #8c8c8c
+								padding-top 5px
+								display block
+								font-style italic
+					.item.type_audio
+						padding-top 0
+						.jp-audio
+							float left
+				.partage
+					a 
+						width 35px
+						height 35px
+						display block
+						float left
+						margin-right 2px
+						
+					a.bt_facebook
+						background url('../images/sprite.png') no-repeat -237px -381px
+					a.bt_twitter
+						background url('../images/sprite.png') no-repeat -272px -381px
+					a.bt_googlePlus
+						background url('../images/sprite.png') no-repeat -308px -381px
+			.mainRight.large
+				width auto
+				float none
+				.medias
+					.item 
+						width 100%
+						img
+								width 100px;
+						span.name
+								width 400px
+								float left
+		.fb-comments
+			background-color #fff
+			background-color rgba(255,255,255,0.7)
+			margin-top 20px
+	
+	
+/***************** FOOTER  ************************/
+footer
+	padding 20px 150px
+	background url('../images/trans.png') repeat
+	.share
+		background #cdc8b7
+		padding 5px
+		float left
+		min-width 410px
+		-webkit-border-radius 5px
+		-moz-border-radius 5px
+		border-radius 5px
+		span.title
+			padding 4px 0
+			font-weight 300
+			font-size 17px
+			text-shadow 0 1px 0 #fff
+			text-transform uppercase
+			display block
+			float left
+			margin-right 10px
+		ul 
+			padding-top 3px
+			float left
+			width 300px
+			li 
+				float left
+			li.fb
+				.fb-like
+					float left
+	.bt_credits
+		width 103px
+		height 39px
+		background url('../images/sprite.png') no-repeat 0 -342px
+		float right
+		&:hover
+			background url('../images/sprite.png') no-repeat 0 -381px
+
+	.bt_suivezNous
+		width 129px
+		height 39px
+		background url('../images/sprite.png') no-repeat -103px -342px
+		float right
+		margin-left 5px
+		&:hover
+			background url('../images/sprite.png') no-repeat -103px -381px
+	
+/************** BT ************/
+.logo a,
+.bt_lecteur,
+.bt_comprendre,
+.bt_temoignez,
+.bt_credits,
+.bt_suivezNous,
+.question
+	display block
+	text-indent -9000px
+
+a
+	color #383838
+	text-decoration none
+
+.clear
+	clear both
+
+/************  LIGHTBOX  *******************/
+
+.mask
+	width 100%
+	height 100%
+	top 0
+	left 0
+	position fixed
+	z-index 20
+	background #000
+	opacity 0.1
+	/*filter alpha(opacity = 10) */
+	cursor pointer
+
+.popup
+	width 700px
+	position fixed
+	left 50%
+	top 50%
+	z-index 100
+	-moz-box-shadow 0px 0px 20px 0px #000000
+	-webkit-box-shadow 0px 0px 20px 0px #000000
+	-o-box-shadow 0px 0px 20px 0px #000000
+	box-shadow 0px 0px 20px 0px #000000
+	padding 40px 60px 30px 60px
+	background url('../images/transW.png') repeat top left
+	color #333d46
+	font-size 14px
+	line-height 17px
+	display none
+	h2
+		font-size 18px
+		text-transform uppercase
+		font-weight 400
+		margin-bottom 20px
+	a
+		font-weight bold
+	.close
+		width 34px
+		height 35px
+		display block
+		text-indent -9000px
+		position absolute
+		right 10px
+		top 10px
+		cursor pointer
+		background url('../images/sprite.png') no-repeat -158px -136px
+
+#contentDoc
+	padding 10px
+	height 500px
+	overflow scroll
+	overflow-x hidden
+	
+
+.bts_social
+	float right
+	width 150px
+	.bt_tweet, .bt_facebook
+		width 136px
+		height 37px
+		font-size 14px
+		line-height 16px
+		padding 6px 10px 5px 10px
+		text-transform uppercase
+		margin-bottom 20px
+		span
+			width 50px
+			height 50px
+			margin 0px 0 0 -13px
+			display block
+			float left
+			background url('../images/sprite.png') no-repeat -307px -420px
+			
+	.bt_facebook
+		font-size 13px
+		span
+			width 56px
+			height 50px
+			margin 5px 0 0 -20px
+			background url('../images/sprite.png') no-repeat -251px -420px
+			
+			
+.newsletter
+	float left
+	width 445px
+	h4
+		font-size 16px
+		margin-bottom 15px
+	p 
+		margin-bottom 10px
+	label
+		float left
+		width 150px
+	input.text 
+		padding 5px
+		border 1px solid #cecece
+	#submit
+		cursor pointer
+		display inline-block
+		width 103px
+		height 39px
+		line-height 39px
+		margin-left 150px
+		border none
+		background none
+		font-weight 400
+		text-align center
+		background url('../images/sprite.png') no-repeat 0px -502px
+		&:hover
+			background url('../images/sprite.png') no-repeat 0px -541px
+	.needsfilled
+		background #ff4005
+		color white
+	.notice
+		color green
+		&.error
+			color red
+		
+#credits
+	h3
+		font-size 16px
+		margin 20px 0 5px 0;
+	.names
+		color #000
+		font-size 15px
+		a
+			color #2aacd3
+			font-weight normal
+					
+		
+/****************** STYLE FORM  ***************/
+
+input.input
+	border none
+	background url('../images/sprite.png') no-repeat 0 -462px
+	width 238px
+	height 25px
+	padding 3px
+
+.checkbox, .radio 
+	width 22px
+	height 21px
+	padding 0 5px 0 0
+	background url('../images/checkbox.png') no-repeat
+	display block
+	clear left
+	float left
+
+.radio 
+	background url('../images/radio.png') no-repeat
+
+.select 
+	cursor pointer
+	position absolute
+	display block
+	width 213px /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height 24px
+	padding 8px 0 0 8px
+	background url('../images/select.png') no-repeat
+	overflow hidden
+
+select
+	-webkit-appearance menulist-button
+	padding 10px 0

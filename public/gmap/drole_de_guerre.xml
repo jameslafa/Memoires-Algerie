@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markers>
+	<marker id="paris" name="Paris" lat="48.856614" lng="2.3522219" nbdoc="2" militaire="0" personnelle="2" administrative="0" />
+	<marker id="tlemcen" name="Tlemcen" lat="34.8825" lng="-1.31393" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="oran" name="Oran" lat="35.6969444" lng="-0.6330556" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="charleville-mézières" name="Charleville-Mézières" lat="49.762085" lng="4.726096" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="chlef" name="Chlef" lat="36.1666667" lng="1.3333333" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="djedida" name="Djedida" lat="34.9" lng="7.233333" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tamza" name="Tamza" lat="35.316667" lng="6.833333" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="kenchela" name="Kenchela" lat="35.43811" lng="7.146648" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="tebessa" name="Tebessa" lat="35.407139" lng="8.1208639" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+	<marker id="biskra" name="Biskra" lat="34.85" lng="5.7333333" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="saint-etienne" name="Saint-Etienne" lat="45.439695" lng="4.3871779" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="skikda" name="Skikda" lat="36.8666667" lng="6.9" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="el kef" name="El Kef" lat="35.8833333" lng="8.55" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="tizi ouzou" name="Tizi Ouzou" lat="36.7166667" lng="4.05" nbdoc="1" militaire="1" personnelle="0" administrative="0" />
+</markers>

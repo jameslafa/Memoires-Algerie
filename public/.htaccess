@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !\.(htm[l]?|php)$
+RewriteCond %{REQUEST_URI} \.[A-Za-z]{1,4}$
+RewriteRule ^(.*)$ - [L]
+
+RewriteCond %{HTTP_HOST} ^(static\.)?memoires-algerie\.org$ [NC]
+RewriteRule ^ http://memoires-algerie.org [R,L]

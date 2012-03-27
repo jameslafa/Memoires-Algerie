@@ -1,0 +1,26 @@
+#document_list.admin_page
+	#header.clearfix
+		nav
+			a.action(href="/admin/main") Accueil
+			a.action.secondary(href="/admin/logout") Deconnexion
+		h1 Liste des documents
+	!= messages()
+	p
+		a.add_document.action(href='/admin/documents/add') Ajouter un document
+
+	#list_of_document		
+		p.actions
+			input.search(placeholder="Rechercher")
+			span.sort.action(data-sort="title") Trier par titre
+			span.sort.action(data-sort="status") Trier par statut
+			span.sort.action(data-sort="type") Trier par type		 
+		ul.list
+			- each document in documents
+				li
+					div.edit
+						a.gotodocument.action(href='/admin/documents/#{document._id}/edit') Edit
+					div.title #{document.title}
+					div.status #{document.status}
+					div.type #{document.type}
+
+include ../../includes/footer

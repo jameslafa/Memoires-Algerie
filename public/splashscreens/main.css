@@ -1,0 +1,10 @@
+body{
+	background-color:#f3f0e8;
+	padding:0;
+}
+#splash{
+	display:block;
+	margin:0 auto;
+	width:990px;
+	box-shadow: 0 0 10px #000;
+}

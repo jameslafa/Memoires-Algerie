@@ -1,0 +1,125 @@
+div#comprendre.popup
+	div.content_popup
+		a.close(href="#", title="Fermer") Close
+		h2 Comprendre le projet
+		
+		p
+			| Mémoires d’Algérie est un musée numérique en devenir, lancé le 19 mars pour le cinquantième anniversaire des accords d’Evian. Des témoignages et archives personnelles inédites sont rassemblés, ainsi que des archives de l’armée française et des notes de renseignement des services français. De nouveaux documents seront régulièrement ajoutés jusqu’au 5 juillet, date de l’Indépendance algérienne.
+			br
+			br
+			| Dans les archives publiées, nous avons décidé d’anonymiser certains noms dans les documents, principalement dans les comptes-rendus d’interrogatoires. L’utilisation très répandue de la torture doit pousser à la plus grande prudence quant aux faits rapportés dans ce cadre. Les “aveux” ne constituent pas des faits, encore moins des preuves. De même, les comptes-rendus d’opération et les notes de renseignement doivent être lus en gardant en tête qu’ils sont produits par l’une des parties dans un contexte de guerre.
+			br
+			br
+			| Pour continuer à se développer, pour permettre à chacun d’explorer sa guerre d’indépendance, Mémoires d’Algérie a besoin de votre soutien. Vous pouvez nous envoyer vos témoignages et archives personnelles. Vous pouvez aussi devenir mécène de Mémoires d’Algérie et contribuer à pérenniser ce projet à hauteur de vos moyens. Pour plus d’informations, contactez-nous.
+			br
+			br
+			| Mémoire d’Algérie vous permet de naviguer au coeur des documents via deux entrées principales : “carte” et “timeline”. Elles ont en commun une frise chronologique divisant les huit années de la guerre en six grandes périodes historiques et permettant de filtrer les documents par période.
+			br
+			br
+			| Sur l'entrée "carte", en cliquant sur un point lié à une ville, le nombre précis de documents s’affiche et vous avez la possibilité d’y accéder. Vous basculez alors sur le mode “timeline”. Sur le mode "timeline", des informations plus précises relatives à chaque document s’affichent : thèmes, dates, noms ou villes cités. En un clic, vous pouvez consulter individuellement chacun de ces documents ainsi que les médias qui y sont associés (images, sons). Utilisez la borne Facebook, sous chaque document, pour commenter et les partager sur les réseaux.
+
+div#temoignez.popup
+	div.content_popup
+		a.close(href="#", title="Fermer") Close
+		h2 Vous avez des documents à nous faire parvenir ?
+		
+		p 
+			|Un formulaire complet pour l'envoi de vos témoignages sera disponible dans les jours qui viennent. En attendant n'hésitez pas à nous laisser vos récits par mail : 
+			a(href="mailto:temoignages@memoires-algerie.org", target="_blank") temoignages@memoires-algerie.org
+		
+div#credits.popup
+	div.content_popup
+		a.close(href="#", title="Fermer") Close
+		h2 Crédits
+		
+		h3 Conception, développement et design
+		.names
+			a(href="https://twitter.com/mboucharlat", target="_blank") Marion Boucharlat
+			|, 
+			a(href="https://twitter.com/annelisebouyer", target="_blank") Anne-Lise Bouyer
+			|, 
+			a(href="https://twitter.com/juliengoetz", target="_blank") Julien Goetz
+			|, 
+			a(href="https://twitter.com/jameslafa", target="_blank") James Lafa
+			|, 
+			a(href="https://twitter.com/marko_kid", target="_blank") Abdélilah El Mansouri
+			|.
+		
+		h3 Pilotage éditorial et édition des documents
+		.names
+			|Nassima Amarouche,
+			a(href="https://twitter.com/pierre_alonso", target="_blank") Pierre Alonso
+			|, 
+			a(href="https://twitter.com/rodolphebaron", target="_blank") Rodolphe Baron
+			|, 
+			a(href="https://twitter.com/mariecoussin", target="_blank") Marie Coussin
+			|, 
+			a(href="https://twitter.com/guillaumdasquie", target="_blank") Guillaume Dasquié
+			|, 
+			|Lila Hadi, 
+			a(href="https://twitter.com/juliengoetz", target="_blank") Julien Goetz
+			|, 
+			a(href="https://twitter.com/melalger", target="_blank") Mélanie Matarese
+			|, 
+			a(href="https://twitter.com/adlenmeddi", target="_blank") Adlène Meddi
+			|, Djouher Si Mohamed, Sabiha Ouakli, Tassadite Saada, Nacéra Saoudi.
+		
+		h3 Voix-off
+		.names
+			|Ali Belkacem, 
+			a(href="https://twitter.com/LeilaBeratto", target="_blank") Leïla Beratto
+			|, 
+			|Yacine Bouaziz, 
+			a(href="https://twitter.com/sofiadjama", target="_blank") Sofia Djama
+			|, 
+			a(href="https://twitter.com/juliengoetz", target="_blank") Julien Goetz
+			|, 
+			|Arezki Larbi, Marion Le Guével, Amine Khaled, Salim Mesbah, Youcef Sahia, Hortense Volle.
+
+div#suivezNous.popup
+	div.content_popup
+		a.close(href="#", title="Fermer") Close
+		h2 Suivez nous
+		
+		div.bts_social
+			p 
+				a.bt.bt_tweet(href="https://twitter.com/MemoiresAlgerie", title="Suivez nous sur twitter", target="_blank") 
+					span
+					| Suivez nous sur Twitter
+			p 
+				a.bt.bt_facebook(href="https://www.facebook.com/MemoiresAlgerie", title="Suivez nous sur Facebook", target="_blank") 
+					span
+					| Suivez nous sur Facebook
+			div.clear
+		
+		div.newsletter
+			h4 Abonnez-vous à la newsletter
+			
+			div#formNewsletter
+				p
+					label(for="name") Prénom et Nom
+					input.text(type="text", name="name", id="name")
+				p
+					label(for="email") Email
+					input.text(type="text", name="email", id="email")
+				p
+					a#submit S'abonner
+				p.notice
+		div.clear
+
+
+div#docPop.popup
+	div.content_popup
+		a.close(href="#", title="Fermer") Close
+		div#contentDoc
+	
+	
+	
+	
+- each period in periods
+	div.popup(id="#{period.key}")
+		div.content_popup
+		a.close(href="#", title="Fermer") Close
+		h2 #{period.title}
+		p #{period.description}
+	

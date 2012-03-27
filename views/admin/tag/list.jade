@@ -1,0 +1,18 @@
+#tags_list.admin_page
+	#header.clearfix
+		nav
+			a.action(href="/admin/main") Accueil
+		h1 Liste des tags utilisés	
+	.notice Cliquer sur un tag pour voir la liste des documents utilisant ce tag
+
+	#list_of_tags		
+		p.actions
+			label Chercher un tag
+			input.search(placeholder="Rechercher")
+		ul.list
+			- each tag in tags
+				li
+					- encodedtag = encodeURIComponent(tag)
+					a.tag.action(href="/admin/tag/edit/#{encodedtag}") #{tag}
+
+include ../../includes/footer		

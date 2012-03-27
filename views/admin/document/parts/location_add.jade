@@ -1,0 +1,43 @@
+.location(locationid=index)
+	.formline
+		label Pays:
+		select(name='location[#{index}][country]')
+			option(value="") Sélectionner un pays
+			option(value="dz") Algérie
+			option(value="eg") Egypte
+			option(value="fr") France
+			option(value="ma") Maroc
+			option(value="tn") Tunisie
+	.formline
+		label Ville:
+		input(name='location[#{index}][town]')
+	.formline
+		label Lieu-dit:
+		input(name='location[#{index}][locality]')
+	.formline
+		.split_fields
+			label Wilaya guerre:
+			select(name='location[#{index}][wilaya_old]')
+				option(value="") Sélectionner une Wilaya guerre
+				- each wilaya_old in wilayas_old
+					option(value="#{wilaya_old}") #{wilaya_old}
+		.split_fields
+			label Wilaya actuelle:
+			select(name='location[#{index}][wilaya_actual]')
+				option(value="") Sélectionner une Wilaya actuelle
+				- each wilaya_actual in wilayas_actual
+					option(value="#{wilaya_actual}") #{wilaya_actual}
+	.formline
+		label Département:
+		select(name='location[#{index}][departement]')
+			option(value="") Sélectionner un département
+			- each departement in departements
+				option(value="#{departement}") #{departement}
+	.formline
+			label Latitude/Longitude:
+			input.short(name='location[#{index}][lat]')
+			input.short(name='location[#{index}][lon]')
+			a.action(href="http://www.toutimages.com/google_gps/sis_gps.htm", target="_blank") Trouver les coordonnées
+			
+	.formline
+		a.remove_location.action.secondary(href='#', locationid=index) Supprimer cette localisation

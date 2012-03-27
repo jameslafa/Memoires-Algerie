@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markers>
+	<marker id="batna" name="Batna" lat="35.55" lng="6.1666667" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="ouargla" name="Ouargla" lat="31.96298" lng="5.342011" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="oran" name="Oran" lat="35.6969444" lng="-0.6330556" nbdoc="1" militaire="0" personnelle="0" administrative="1" />
+	<marker id="béchar" name="Béchar" lat="31.608219" lng="-2.220005" nbdoc="1" militaire="0" personnelle="1" administrative="0" />
+	<marker id="paris " name="Paris " lat="48.856614" lng="2.3522219" nbdoc="4" militaire="0" personnelle="0" administrative="4" />
+</markers>

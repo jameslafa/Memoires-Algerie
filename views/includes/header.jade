@@ -1,0 +1,16 @@
+head
+	title #{page_title}
+	link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700', type='text/css')	
+	link(rel="icon", type="image/png", href="/images/favico.png")
+	- if (typeof admin != "undefined")
+		link(rel='stylesheet', href='/css/admin.css')
+	- else
+		link(rel='stylesheet', href='/css/main.css')
+		link(rel='stylesheet', href='/js/jPlayer/player.css')
+		meta(property="og:title", content="#{fb.title}")
+		meta(property="og:type", content="non_profit")
+		meta(property="og:url", content="#{fb.url}")
+		meta(property="og:image", content="http://www.memoires-algerie.org/images/fb_image.jpg")
+		meta(property="og:site_name", content="M&eacute;moires d'Alg&eacute;rie")
+		meta(property="og:description", content="#{fb.description}")
+		meta(property="fb:app_id", content="394032280626738")

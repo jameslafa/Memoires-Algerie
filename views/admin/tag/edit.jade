@@ -1,0 +1,15 @@
+#tag.admin_page
+	#header.clearfix
+		nav
+			a.action(href="/admin/main") Accueil
+			a.action(href="/admin/control/tags") Liste des tags
+		h1 
+			|Document associé au tag
+			span.tag #{tag}
+
+	.notice Cliquer sur le titre d'un document pour l'éditer
+
+	ul.tags
+		- each document in documents
+			li.tag 
+				a.action(href="/admin/documents/#{document.id}/edit") #{document.title}

@@ -1,0 +1,1882 @@
+
+/* line 199 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+
+/* line 1 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 78 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+body {
+  line-height: 1;
+}
+
+/* line 81 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 94 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 99 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 103 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+/* line 109 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 116 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 121 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 127 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+del {
+  text-decoration: line-through;
+}
+
+/* line 130 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 135 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 139 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 147 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+input,
+select {
+  vertical-align: middle;
+}
+
+/* line 151 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* line 163 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 170 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 173 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+[hidden] {
+  display: none;
+}
+
+/* line 176 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 182 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+body {
+  margin: 0;
+}
+
+/* line 185 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 192 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 196 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+h1 {
+  font-size: 2em;
+}
+
+/* line 199 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 202 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 206 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 209 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+dfn {
+  font-style: italic;
+}
+
+/* line 212 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 216 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 224 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 228 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+q {
+  quotes: none;
+}
+
+/* line 231 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+q:before,
+q:after {
+  content: none;
+}
+
+/* line 235 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+small {
+  font-size: 75%;
+}
+
+/* line 238 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 245 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+sup {
+  top: -0.5em;
+}
+
+/* line 248 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 251 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 255 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 258 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+form {
+  margin: 0;
+}
+
+/* line 261 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 266 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+legend {
+  border: 0;
+  *margin-left: -7px;
+}
+
+/* line 270 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 279 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 283 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 291 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 296 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 302 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 305 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 310 : /Users/james/Web/github/memoires-algerie/views/css/reset.styl */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 3 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+body {
+  background: #f3f0e8;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #383838;
+  line-height: 16px;
+}
+
+/* line 10 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/***************** STRUCTURE ******************/
+
+/* line 12 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#wrapper {
+  width: 989px;
+  min-height: 600px;
+  margin: 0 auto;
+  background: url("../images/fond.jpg") repeat-y;
+  -moz-box-shadow: 0px 3px 5px 0px #656565;
+  -webkit-box-shadow: 0px 3px 5px 0px #656565;
+  -o-box-shadow: 0px 3px 5px 0px #656565;
+  box-shadow: 0px 3px 5px 0px #656565;
+}
+
+/* line 22 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header {
+  padding: 0 10px 0 20px;
+  margin-bottom: 10px;
+}
+
+/* line 27 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#bloc_map,
+#bloc_timeline,
+#single {
+  -moz-transition: all 0.24s ease-out 0s;
+  -webkit-transition: all 0.24s ease-out 0s;
+  -moz-transition: all 0.24s ease-out 0s;
+  -o-transition: all 0.24s ease-out 0s;
+  -ms-transition: all 0.24s ease-out 0s;
+  transition: all 0.24s ease-out 0s;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 38 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 39 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+body.screen-map #bloc_map {
+  height: 480px;
+}
+
+/* line 42 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 43 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+body.screen-timeline #bloc_timeline {
+  min-height: 270px;
+  height: auto;
+}
+
+/* line 47 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 48 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+body.screen-document #single {
+  min-height: 400px;
+  height: auto;
+}
+
+/* line 51 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+body.screen-document .timeline {
+  display: none;
+}
+
+/* line 54 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.contentBloc {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 59 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar {
+  margin-top: 10px;
+  width: 260px;
+  padding: 10px;
+  min-height: 300px;
+  float: left;
+  font-size: 14px;
+  font-weight: 300;
+  background: url("../images/transG.png") repeat;
+}
+
+/* line 69 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.main {
+  margin-top: 10px;
+  width: 650px;
+  min-height: 300px;
+  float: right;
+}
+
+/* line 75 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/*************  HEADER  ************/
+
+/* line 77 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.logo {
+  width: 312px;
+  height: 118px;
+  float: left;
+  margin: 10px 0 0 10px;
+}
+
+/* line 82 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.logo a {
+  width: 312px;
+  height: 118px;
+  background: url("../images/sprite.png") no-repeat 0 -224px;
+}
+
+/* line 87 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.rightH {
+  width: 610px;
+  float: right;
+}
+
+/* line 91 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.partenaires {
+  width: 250px;
+  padding-top: 10px;
+  float: left;
+  margin-bottom: 25px;
+}
+
+/* line 96 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.partenaires img {
+  vertical-align: middle;
+}
+
+/* line 99 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.partenaires a {
+  padding-top: 3px;
+  display: block;
+  float: left;
+}
+
+/* line 104 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.partenaires .owni {
+  height: 27px;
+  border-right: 2px solid #704715;
+  padding-right: 8px;
+  margin-right: 8px;
+  padding-top: 4px;
+}
+
+/* line 111 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header nav {
+  float: left;
+  margin-left: 15px;
+}
+
+/* line 114 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header nav ul {
+  width: 183px;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 119 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header nav ul li {
+  float: left;
+}
+
+/* line 121 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header nav ul li a {
+  display: block;
+  width: 88px;
+  height: 54px;
+  text-indent: -9000px;
+}
+
+/* line 126 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header nav ul li .bt_timeline {
+  width: 94px;
+}
+
+/* line 128 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header nav .page-map {
+  background: url("../images/sprite.png") no-repeat -216px 0;
+}
+
+/* line 130 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+header nav .page-timeline {
+  background: url("../images/sprite.png") no-repeat -216px -54px;
+}
+
+/* line 134 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.temoignez {
+  float: right;
+}
+
+/* line 137 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#jp_container_1 {
+  width: 52px;
+  height: 44px;
+  float: right;
+  margin-left: 4px;
+}
+
+/* line 143 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_lecteur {
+  width: 52px;
+  height: 44px;
+  float: right;
+  background: url("../images/sprite.png") no-repeat -158px 0;
+  margin-left: 4px;
+}
+
+/* line 150 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_lecteur.active {
+  background: url("../images/sprite.png") no-repeat -158px -44px;
+}
+
+/* line 154 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_comprendre {
+  width: 127px;
+  height: 44px;
+  float: right;
+  background: url("../images/sprite.png") no-repeat 0 -136px;
+}
+
+/* line 159 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_comprendre:hover {
+  background: url("../images/sprite.png") no-repeat 0 -180px;
+}
+
+/* line 162 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.temoignez span {
+  float: left;
+  margin-top: 10px;
+  text-align: right;
+  color: #3f3f3f;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* line 170 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_temoignez {
+  width: 158px;
+  height: 68px;
+  background: url("../images/sprite.png") no-repeat 0 0;
+  float: right;
+  margin-left: 5px;
+}
+
+/* line 176 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_temoignez:hover {
+  background: url("../images/sprite.png") no-repeat 0 -68px;
+}
+
+/* line 179 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/***************** CARTE  *************************/
+
+/* line 181 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.blocMap {
+  width: 930px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* line 185 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.blocMap #map_canvas {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  border: 3px solid #fff;
+}
+
+/* line 190 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.blocMap .choixEvenement {
+  width: 500px;
+}
+
+/* line 192 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.blocMap #map {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  border: 3px solid #fff;
+}
+
+/* line 198 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement {
+  padding: 10px 20px 10px 20px;
+  background: url("../images/transW.png") repeat;
+  position: relative;
+  -moz-box-shadow: 2px -1px 6px 0px #656565;
+  -webkit-box-shadow: 2px -1px 6px 0px #656565;
+  -o-box-shadow: 2px -1px 6px 0px #656565;
+  box-shadow: 2px -1px 6px 0px #656565;
+}
+
+/* line 206 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement #enc,
+.choixEvenement #enc2 {
+  width: 17px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+}
+
+/* line 212 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement #enc.color_1,
+.choixEvenement #enc2.color_1 {
+  background: url("../images/sprite.png") no-repeat -375px -264px;
+}
+
+/* line 214 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement #enc.color_2,
+.choixEvenement #enc2.color_2 {
+  background: url("../images/sprite.png") no-repeat -375px -279px;
+}
+
+/* line 216 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement #enc.color_3,
+.choixEvenement #enc2.color_3 {
+  background: url("../images/sprite.png") no-repeat -375px -294px;
+}
+
+/* line 218 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement #enc.color_4,
+.choixEvenement #enc2.color_4 {
+  background: url("../images/sprite.png") no-repeat -375px -309px;
+}
+
+/* line 220 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement #enc.color_5,
+.choixEvenement #enc2.color_5 {
+  background: url("../images/sprite.png") no-repeat -375px -324px;
+}
+
+/* line 222 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement #enc.color_6,
+.choixEvenement #enc2.color_6 {
+  background: url("../images/sprite.png") no-repeat -375px -339px;
+}
+
+/* line 226 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement .question {
+  width: 29px;
+  height: 29px;
+  margin-right: 10px;
+  float: left;
+  background: url("../images/sprite.png") no-repeat -179px -108px;
+}
+
+/* line 232 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement h2 {
+  width: 460px;
+  margin: 8px 0 0 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  float: left;
+}
+
+/* line 239 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement .blocSelect {
+  float: right;
+  height: 32px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 245 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.choixEvenement.all {
+  display: none;
+}
+
+/* line 248 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.infoW {
+  text-align: left;
+  font-size: 14px;
+  line-height: 15px;
+  color: #3f3f3f;
+}
+
+/* line 253 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.infoW h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* line 257 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.infoW span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 260 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.infoW ul {
+  margin-bottom: 10px;
+}
+
+/* line 265 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline {
+  padding: 5px 0 0 0;
+  background: url("../images/trans2.png") repeat;
+}
+
+/* line 268 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline .dates {
+  height: 16px;
+  padding-left: 4px;
+  margin-bottom: 20px;
+}
+
+/* line 272 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 273 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li {
+  float: left;
+  position: relative;
+  height: 12px;
+}
+
+/* line 277 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li a {
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  text-decoration: none;
+  color: #222;
+  bottom: 0;
+  left: 0;
+  -moz-box-shadow: 0px -1px 2px 0px #343434;
+  -webkit-box-shadow: 0px -1px 2px 0px #343434;
+  -o-box-shadow: 0px -1px 2px 0px #343434;
+  box-shadow: 0px -1px 2px 0px #343434;
+  -moz-transition: all 0.12s ease-out 0s;
+  -webkit-transition: all 0.12s ease-out 0s;
+  -moz-transition: all 0.12s ease-out 0s;
+  -o-transition: all 0.12s ease-out 0s;
+  -ms-transition: all 0.12s ease-out 0s;
+  transition: all 0.12s ease-out 0s;
+}
+
+/* line 295 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li a span {
+  visibility: hidden;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  z-index: 999;
+  min-width: 200px;
+  width: auto;
+  padding: 10px;
+  opacity: 0.2;
+  background-color: #faf9f8;
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.00));
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.00));
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.00));
+  background-image: -o-linear-gradient;
+  background-image: linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.00));
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.40), 0 1px 0 rgba(255,255,255,0.50) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.40), 0 1px 0 rgba(255,255,255,0.50) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.40), 0 1px 0 rgba(255,255,255,0.50) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.40);
+  -moz-transition: all 0.12s ease-out 0s;
+  -webkit-transition: all 0.12s ease-out 0s;
+  -moz-transition: all 0.12s ease-out 0s;
+  -o-transition: all 0.12s ease-out 0s;
+  -ms-transition: all 0.12s ease-out 0s;
+  transition: all 0.12s ease-out 0s;
+}
+
+/* line 323 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li a span:before {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  bottom: -26px;
+  left: 10%;
+  width: 25px;
+  height: 26px;
+  background: url("../images/sprite.png") no-repeat -375px -108px;
+}
+
+/* line 332 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li a:hover {
+  height: 24px;
+  border: 0;
+}
+
+/* line 335 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li a:hover span {
+  visibility: visible;
+  bottom: 48px;
+  left: 20px;
+  opacity: 0.9;
+}
+
+/* line 340 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_1,
+.timeline ul li.color_1 a {
+  width: 104px;
+  background: url("../images/color_rouge.png") repeat;
+}
+
+/* line 344 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_2,
+.timeline ul li.color_2 a {
+  width: 125px;
+  background: url("../images/color_marron.png") repeat;
+}
+
+/* line 348 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_2 span:before,
+.timeline ul li.color_2 a span:before {
+  background: url("../images/sprite.png") no-repeat -375px -134px;
+}
+
+/* line 350 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_3,
+.timeline ul li.color_3 a {
+  width: 219px;
+  background: url("../images/color_jaune.png") repeat;
+}
+
+/* line 354 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_3 span:before,
+.timeline ul li.color_3 a span:before {
+  background: url("../images/sprite.png") no-repeat -375px -160px;
+}
+
+/* line 356 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_4,
+.timeline ul li.color_4 a {
+  width: 468px;
+  background: url("../images/color_vert.png") repeat;
+}
+
+/* line 360 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_4 span:before,
+.timeline ul li.color_4 a span:before {
+  background: url("../images/sprite.png") no-repeat -375px -186px;
+}
+
+/* line 362 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_5,
+.timeline ul li.color_5 a {
+  width: 42px;
+  background: url("../images/color_olive.png") repeat;
+}
+
+/* line 366 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_5 span:before,
+.timeline ul li.color_5 a span:before {
+  background: url("../images/sprite.png") no-repeat -375px -212px;
+  position: absolute;
+  left: 182px;
+}
+
+/* line 370 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_5 span,
+.timeline ul li.color_5 a span {
+  position: absolute;
+  left: -170px;
+}
+
+/* line 373 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 374 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_5:hover span,
+.timeline ul li.color_5 a:hover span {
+  position: absolute;
+  left: -170px;
+}
+
+/* line 377 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_6,
+.timeline ul li.color_6 a {
+  width: 31px;
+  background: url("../images/color_bleu.png") repeat;
+}
+
+/* line 381 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_6 span:before,
+.timeline ul li.color_6 a span:before {
+  background: url("../images/sprite.png") no-repeat -375px -238px;
+  position: absolute;
+  left: 192px;
+}
+
+/* line 385 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_6 span,
+.timeline ul li.color_6 a span {
+  position: absolute;
+  left: -190px;
+}
+
+/* line 388 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 389 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.timeline ul li.color_6:hover span,
+.timeline ul li.color_6 a:hover span {
+  position: absolute;
+  left: -190px;
+}
+
+/* line 395 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/*******************  SIDEBAR ********************/
+
+/* line 397 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#document_edit form .formline.media_photo img {
+  height: auto;
+  width: 200px;
+}
+
+/* line 402 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 403 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar .choixEvenement {
+  padding: 10px 20px 10px 10px;
+  margin-bottom: 20px;
+}
+
+/* line 406 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar .choixEvenement .question {
+  margin-bottom: 5px;
+}
+
+/* line 408 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar .choixEvenement h2 {
+  width: 190px;
+  float: left;
+  margin: 4px 0 10px 0;
+}
+
+/* line 412 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar form {
+  margin-bottom: 20px;
+}
+
+/* line 414 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar form h3 {
+  margin-bottom: 10px;
+}
+
+/* line 416 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+/* line 421 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar h4 {
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+/* line 426 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar .type {
+  margin-bottom: 15px;
+}
+
+/* line 429 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar p {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+/* line 433 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.sidebar #searchbutton {
+  margin-top: 20px;
+}
+
+/* line 436 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.tog {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 300;
+  background: url("../images/sprite.png") no-repeat -238px -340px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+/* line 444 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.tog.active {
+  background: url("../images/sprite.png") no-repeat -238px -363px;
+}
+
+/* line 447 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.togC {
+  display: none;
+  margin-bottom: 15px;
+}
+
+/* line 450 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/******************* Resultat  *********************/
+
+/* line 453 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#evntCol {
+  width: 12px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 289px;
+}
+
+/* line 460 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.color_1 {
+  background: url("../images/color_rouge.png") repeat;
+}
+
+/* line 462 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.color_2 {
+  background: url("../images/color_marron.png") repeat;
+}
+
+/* line 464 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.color_3 {
+  background: url("../images/color_jaune.png") repeat;
+}
+
+/* line 466 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.color_4 {
+  background: url("../images/color_vert.png") repeat;
+}
+
+/* line 468 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.color_5 {
+  background: url("../images/color_olive.png") repeat;
+}
+
+/* line 470 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.color_6 {
+  background: url("../images/color_bleu.png") repeat;
+}
+
+/* line 473 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.item_time {
+  font-size: 13px;
+  padding: 10px;
+  background: url("../images/transW.png") repeat;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+}
+
+/* line 479 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.item_time .left {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 482 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.item_time .sourceType {
+  text-align: right;
+  font-weight: 500;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* line 487 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.item_time .left span,
+.item_time .sourceType span {
+  display: block;
+}
+
+/* line 490 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.item_time h3 {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* line 493 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.item_time .desc {
+  margin-bottom: 25px;
+}
+
+/* line 496 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.tags {
+  width: 430px;
+  float: left;
+}
+
+/* line 499 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.tags li {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 503 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.tags li a {
+  padding: 3px 10px;
+  display: block;
+  background: #d3cebd;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 515 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+p.noDoc {
+  padding-top: 20px;
+  font-style: italic;
+}
+
+/* line 519 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt {
+  width: 146px;
+  height: 29px;
+  padding: 14px 5px 5px 5px;
+  font-size: 14px;
+  line-height: 15px;
+  float: right;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  display: block;
+  font-weight: 500;
+  cursor: pointer;
+  background: url("../images/sprite.png") no-repeat -216px -108px;
+}
+
+/* line 532 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt:hover {
+  background: url("../images/sprite.png") no-repeat -216px -156px;
+}
+
+/* line 537 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_consult {
+  width: 136px;
+  height: 37px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 6px 10px 5px 10px;
+  text-transform: uppercase;
+}
+
+/* line 544 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_consult span {
+  width: 27px;
+  height: 26px;
+  margin: 3px 0 0 3px;
+  display: block;
+  float: left;
+  background: url("../images/sprite.png") no-repeat -131px -136px;
+}
+
+/* line 554 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt.bt_more {
+  float: right;
+  margin: 0;
+}
+
+/* line 557 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt_more.none {
+  display: none;
+}
+
+/* line 560 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bt.bt_top {
+  float: right;
+  margin-bottom: 20px;
+}
+
+/* line 564 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/************************ SINGLE  *******************/
+
+/* line 566 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single {
+  margin-bottom: 15px;
+}
+
+/* line 568 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .title {
+  padding: 10px;
+  background: url("../images/transW.png") repeat;
+  margin-bottom: 16px;
+  border: 1px solid #fff;
+}
+
+/* line 573 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .title h2 {
+  color: #3f3f3f;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+/* line 578 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .title h2 span {
+  display: block;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/* line 582 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .title .bt {
+  float: left;
+  width: 146px;
+  height: 35px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 5px 5px 5px;
+  text-transform: uppercase;
+  margin-right: 70px;
+}
+
+/* line 591 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .title .bt span {
+  width: 27px;
+  height: 26px;
+  margin: 3px 0 0 3px;
+  display: block;
+  float: left;
+  background: url("../images/sprite.png") no-repeat -131px -162px;
+}
+
+/* line 598 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .sidebar {
+  width: 200px;
+  font-size: 12px;
+  border: 1px solid #fff;
+  background: url("../images/transW.png") repeat;
+}
+
+/* line 603 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .sidebar .sidegroup {
+  margin-bottom: 20px;
+}
+
+/* line 605 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .sidebar .sidegroup h3 {
+  margin: 0;
+}
+
+/* line 607 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .sidebar .sidegroup p {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+/* line 610 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .sidebar .sidegroup .tags {
+  width: auto;
+  float: none;
+}
+
+/* line 613 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .sidebar .sidegroup .tags li {
+  margin: 5px;
+}
+
+/* line 615 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .sidebar .sidegroup .tags li:first-child {
+  margin-left: 0;
+}
+
+/* line 618 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main {
+  width: 720px;
+}
+
+/* line 620 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop {
+  padding: 10px;
+  border: 1px solid #fff;
+  background: url("../images/transM.png") repeat;
+}
+
+/* line 624 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .texte {
+  font-size: 14px;
+  line-height: 18px;
+  float: left;
+  width: 465px;
+  min-height: 500px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+  text-align: justify;
+}
+
+/* line 633 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .texte p {
+  margin: 15px 0;
+}
+
+/* line 635 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .texte.none {
+  display: none;
+}
+
+/* line 637 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight {
+  width: 200px;
+  float: right;
+}
+
+/* line 641 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* line 645 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .medias {
+  margin-bottom: 50px;
+}
+
+/* line 647 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .medias .item {
+  width: 200px;
+  float: left;
+  border-top: 1px solid #cabfa1;
+  padding-top: 5px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* line 654 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .medias .item img {
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: 3px solid #fff;
+  float: left;
+}
+
+/* line 660 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .medias .item span.name {
+  width: 130px;
+  float: right;
+}
+
+/* line 663 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .medias .item span.name span.credits {
+  color: #8c8c8c;
+  padding-top: 5px;
+  display: block;
+  font-style: italic;
+}
+
+/* line 668 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .medias .item.type_audio {
+  padding-top: 0;
+}
+
+/* line 670 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .medias .item.type_audio .jp-audio {
+  float: left;
+}
+
+/* line 672 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 673 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .partage a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  float: left;
+  margin-right: 2px;
+}
+
+/* line 680 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .partage a.bt_facebook {
+  background: url("../images/sprite.png") no-repeat -237px -381px;
+}
+
+/* line 682 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .partage a.bt_twitter {
+  background: url("../images/sprite.png") no-repeat -272px -381px;
+}
+
+/* line 684 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight .partage a.bt_googlePlus {
+  background: url("../images/sprite.png") no-repeat -308px -381px;
+}
+
+/* line 686 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight.large {
+  width: auto;
+  float: none;
+}
+
+/* line 689 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 690 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight.large .medias .item {
+  width: 100%;
+}
+
+/* line 692 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight.large .medias .item img {
+  width: 100px;
+}
+
+/* line 694 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .mainTop .mainRight.large .medias .item span.name {
+  width: 400px;
+  float: left;
+}
+
+/* line 697 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#single .main .fb-comments {
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.70);
+  margin-top: 20px;
+}
+
+/* line 703 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/***************** FOOTER  ************************/
+
+/* line 704 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer {
+  padding: 20px 150px;
+  background: url("../images/trans.png") repeat;
+}
+
+/* line 707 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .share {
+  background: #cdc8b7;
+  padding: 5px;
+  float: left;
+  min-width: 410px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 715 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .share span.title {
+  padding: 4px 0;
+  font-weight: 300;
+  font-size: 17px;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 724 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .share ul {
+  padding-top: 3px;
+  float: left;
+  width: 300px;
+}
+
+/* line 728 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .share ul li {
+  float: left;
+}
+
+/* line 730 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 731 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .share ul li.fb .fb-like {
+  float: left;
+}
+
+/* line 733 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .bt_credits {
+  width: 103px;
+  height: 39px;
+  background: url("../images/sprite.png") no-repeat 0 -342px;
+  float: right;
+}
+
+/* line 738 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .bt_credits:hover {
+  background: url("../images/sprite.png") no-repeat 0 -381px;
+}
+
+/* line 741 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .bt_suivezNous {
+  width: 129px;
+  height: 39px;
+  background: url("../images/sprite.png") no-repeat -103px -342px;
+  float: right;
+  margin-left: 5px;
+}
+
+/* line 747 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+footer .bt_suivezNous:hover {
+  background: url("../images/sprite.png") no-repeat -103px -381px;
+}
+
+/* line 750 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/************** BT ************/
+
+/* line 751 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.logo a,
+.bt_lecteur,
+.bt_comprendre,
+.bt_temoignez,
+.bt_credits,
+.bt_suivezNous,
+.question {
+  display: block;
+  text-indent: -9000px;
+}
+
+/* line 761 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+a {
+  color: #383838;
+  text-decoration: none;
+}
+
+/* line 765 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.clear {
+  clear: both;
+}
+
+/* line 768 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/************  LIGHTBOX  *******************/
+
+/* line 770 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 20;
+  background: #000;
+  opacity: 0.1;
+/*filter alpha(opacity = 10) */
+  cursor: pointer;
+}
+
+/* line 782 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.popup {
+  width: 700px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  -moz-box-shadow: 0px 0px 20px 0px #000;
+  -webkit-box-shadow: 0px 0px 20px 0px #000;
+  -o-box-shadow: 0px 0px 20px 0px #000;
+  box-shadow: 0px 0px 20px 0px #000;
+  padding: 40px 60px 30px 60px;
+  background: url("../images/transW.png") repeat top left;
+  color: #333d46;
+  font-size: 14px;
+  line-height: 17px;
+  display: none;
+}
+
+/* line 798 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.popup h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* line 803 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.popup a {
+  font-weight: bold;
+}
+
+/* line 805 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.popup .close {
+  width: 34px;
+  height: 35px;
+  display: block;
+  text-indent: -9000px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background: url("../images/sprite.png") no-repeat -158px -136px;
+}
+
+/* line 816 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#contentDoc {
+  padding: 10px;
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* line 823 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bts_social {
+  float: right;
+  width: 150px;
+}
+
+/* line 826 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bts_social .bt_tweet,
+.bts_social .bt_facebook {
+  width: 136px;
+  height: 37px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 6px 10px 5px 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* line 834 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bts_social .bt_tweet span,
+.bts_social .bt_facebook span {
+  width: 50px;
+  height: 50px;
+  margin: 0px 0 0 -13px;
+  display: block;
+  float: left;
+  background: url("../images/sprite.png") no-repeat -307px -420px;
+}
+
+/* line 842 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bts_social .bt_facebook {
+  font-size: 13px;
+}
+
+/* line 844 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.bts_social .bt_facebook span {
+  width: 56px;
+  height: 50px;
+  margin: 5px 0 0 -20px;
+  background: url("../images/sprite.png") no-repeat -251px -420px;
+}
+
+/* line 851 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter {
+  float: left;
+  width: 445px;
+}
+
+/* line 854 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* line 857 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+/* line 859 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter label {
+  float: left;
+  width: 150px;
+}
+
+/* line 862 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter input.text {
+  padding: 5px;
+  border: 1px solid #cecece;
+}
+
+/* line 865 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter #submit {
+  cursor: pointer;
+  display: inline-block;
+  width: 103px;
+  height: 39px;
+  line-height: 39px;
+  margin-left: 150px;
+  border: none;
+  background: none;
+  font-weight: 400;
+  text-align: center;
+  background: url("../images/sprite.png") no-repeat 0px -502px;
+}
+
+/* line 877 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter #submit:hover {
+  background: url("../images/sprite.png") no-repeat 0px -541px;
+}
+
+/* line 879 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter .needsfilled {
+  background: #ff4005;
+  color: #fff;
+}
+
+/* line 882 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter .notice {
+  color: #008000;
+}
+
+/* line 884 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.newsletter .notice.error {
+  color: #f00;
+}
+
+/* line 887 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+
+/* line 888 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#credits h3 {
+  font-size: 16px;
+  margin: 20px 0 5px 0;
+}
+
+/* line 891 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#credits .names {
+  color: #000;
+  font-size: 15px;
+}
+
+/* line 894 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+#credits .names a {
+  color: #2aacd3;
+  font-weight: normal;
+}
+
+/* line 899 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+/****************** STYLE FORM  ***************/
+
+/* line 901 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+input.input {
+  border: none;
+  background: url("../images/sprite.png") no-repeat 0 -462px;
+  width: 238px;
+  height: 25px;
+  padding: 3px;
+}
+
+/* line 908 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.checkbox,
+.radio {
+  width: 22px;
+  height: 21px;
+  padding: 0 5px 0 0;
+  background: url("../images/checkbox.png") no-repeat;
+  display: block;
+  clear: left;
+  float: left;
+}
+
+/* line 917 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.radio {
+  background: url("../images/radio.png") no-repeat;
+}
+
+/* line 920 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+.select {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  width: 213px;
+/* With the padding included, the width is 190 pixels: the actual width of the image. */
+  height: 24px;
+  padding: 8px 0 0 8px;
+  background: url("../images/select.png") no-repeat;
+  overflow: hidden;
+}
+
+/* line 930 : /Users/james/Web/github/memoires-algerie/views/css/main.styl */
+select {
+  -webkit-appearance: menulist-button;
+  padding: 10px 0;
+}

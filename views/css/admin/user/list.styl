@@ -1,0 +1,34 @@
+#user_list
+	ul.users
+		list-style-type none
+		padding 0
+		margin 30px auto
+		width 990px
+		
+		span 
+			display inline-block
+			text-align center
+			width 300px			
+		.header
+			span 
+				font-weight bold				
+		.user
+			&:nth-child(odd)
+				background-color : darken(backgroundcolor, 10%)
+			&:nth-child(even)
+				background-color : darken(backgroundcolor, 15%)
+			span.edit
+				width 90px
+
+
+	form#add_user
+		margin 50px auto 10px auto
+		width 990px
+		label
+			display inline-block
+			font-weight bold
+			margin-right 5px
+			text-align right
+			width 120px
+		input
+			width 130px

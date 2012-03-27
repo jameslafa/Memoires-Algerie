@@ -1,0 +1,79 @@
+#document_edit
+	form
+		font-size 14px
+		margin 0 auto
+		width 900px
+
+		fieldset
+			border 1px solid #aaa
+			border-radius 5px
+			margin 20px auto
+
+			legend
+				color #aaa
+				font-size 12px
+				font-weight normal
+				text-transform uppercase
+
+			.formline
+				margin: 10px auto
+
+				label
+					color #444
+					display inline-block
+					font-size 11px
+					padding-right 5px
+					vertical-align middle
+					text-align right
+					text-transform uppercase
+					width 145px
+
+					&.top
+						vertical-align top
+
+				select, input
+					background-color lighten(backgroundcolor, 50%)
+					min-width 200px
+
+					&.long_input
+						width 600px
+					&.short
+						margin-left 2px
+						margin-right 10px
+						min-width 0	
+						width 95px
+
+				select
+					border 1px solid #aaa
+
+				.mceEditor
+					display inline-block
+				.image
+					text-align center
+
+					img
+						height auto
+						width 200px
+			.note
+				color #999
+
+			.split_fields
+				display inline-block
+				width 50%
+		.page_actions
+			margin-left 10px
+			.cancel
+				background-color transparent
+				margin-left 20px
+
+	#doc_header
+		background-color darken(backgroundcolor, 10%)
+		padding 10px 20px
+		.title
+			color #333
+			float left
+			text-shadow 1px 1px #ccc
+		.status
+			float right
+			font-weight bold
+			text-transform uppercase

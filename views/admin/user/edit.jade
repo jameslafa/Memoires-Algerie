@@ -1,0 +1,27 @@
+#user_edit.admin_page
+	#header.clearfix
+		nav
+			a.action(href="/admin/main") Accueil
+			a.action(href="/admin/user/list") Liste des utilisateurs
+			a.action.secondary(href="/admin/logout") Deconnexion
+		h1 
+			|Edition de l'utilisateur
+			|#{user.login}
+
+	form#edit_user
+		label Login
+		span#login #{user.login}
+		br
+		label(for='name') Nom complet
+		input#name(name='name', value=user.name)
+		br
+		label(for='password') Password
+		input#password(name='password', type='password')
+		br
+		label(for='admin') Administrateur		
+		input#admin(type='checkbox', checked=user.admin)
+		br
+		input#submit.action(type='submit', value='Modifier')
+		a.action.secondary(href="/admin/user/list") Annuler
+
+			

@@ -1,0 +1,48 @@
+header
+	h1.logo
+		a(href="/", title="Mémoire d'algérie") Mémoire d'algérie
+	div.rightH
+		div.partenaires
+			a.owni(href="http://www.owni.fr", target="_blank", title="Owni")
+				img(src="/images/logo_owni.png", alt="Owni")
+			a(href="http://www.elwatan.com/", target="_blank")
+				img(src="/images/logo_elwatan.png", alt="El Watan")
+			div.clear
+
+		div#jquery_jplayer_1.jp-jplayer
+
+		div#jp_container_1.jp-audio
+			div.jp-type-playlist
+				div.jp-gui.jp-interface
+					ul.jp-controls
+						li
+							a.jp-play(href="javascript:;",tabindex="1") play
+						li
+							a.jp-pause(href="javascript:;",tabindex="1",style="display:none;") pause
+
+					
+					ul.jp-toggles
+						li
+							a.jp-shuffle(href="javascript:;", tabindex="1", title="shuffle")
+							
+				div.jp-playlist(style="display:none")
+					ul
+						li
+		
+		a.bt_comprendre.lightbox(href="#comprendre", title="Comprendre L'application") Comprendre L'application
+		div.clear
+		nav
+			ul
+				li
+					a.bt_map(href="map", data-name="page-map") Map
+				li
+					a.bt_timeline(href="timeline", data-name="page-timeline") Timeline
+			div.clear
+		div.temoignez
+			span 
+				| Vous avez des documents
+				br 
+				| à nous faire parvenir ?
+			a.bt_temoignez.lightbox(href="#temoignez", title="Témoignez") Témoignez
+		div.clear
+	div.clear
